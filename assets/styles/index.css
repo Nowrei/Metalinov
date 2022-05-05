@@ -36,46 +36,16 @@ body {
 }
 
 
-.entrerpise {
+.entre {
 
-    width: 100%;
-    height: 430px;
-    display: flex;
-    flex-direction: row;
+margin-top: 100px !important;
 }
 
-.photo-entreprise {
-
-    width:100%;
-    height: 300px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-top: 100px;
-
-}
-
-.photo-entreprise img {
-
-    padding: 15px 50px;
-}
-
-.descri p {
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    padding: 70px 20px;
-    font-family: 'Rubik', sans-serif;
-
-}
 
 .slider {
     width: 80%;
     margin: 0 auto;
-    margin-top: 0px;
+    margin-top: 100px;
   }
   
   .img-div {
@@ -84,23 +54,81 @@ body {
     margin: 0 15px;
   }
   
-  .div1 {
+  .logo {
 
-    background-size: cover;
+    display: none ;
+  }
 
+  .accordion {
+
+    margin-top: 100px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .div2 {
-    background: url(https://source.unsplash.com/500x600) center no-repeat;
-    background-size: cover;
-  }
-  
-  .div3 {
-    background: url(https://source.unsplash.com/1200x900) center no-repeat;
-    background-size: cover;
-  }
-  
-  .div4 {
-    background: url(https://source.unsplash.com/400x800) center no-repeat;
-    background-size: cover;
-  }
+
+.video {
+
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover !important;
+} 
+
+.metal {
+
+  width: 408px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width:324px) and (max-width:600px){
+
+.photo {
+
+  height: 600px;
+  background-position-y: 0px;
+}
+.center {
+
+  padding: 0px;
+  width: 90%;
+}
+
+.photo h1 {
+
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+
+  display: none !important; 
+}
+
+.img-div{
+
+  display: none;
+}
+
+.logo {
+
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+.metal {
+
+  width: 310px;
+  height: 170px;
+}
+
+
+}

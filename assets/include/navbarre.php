@@ -12,22 +12,22 @@
           <div class="collapse navbar-collapse" id="navbar-content">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">L'entreprise</a>
+                <a class="nav-link text-light" href="index.php">L'entreprise</a>
               </li>
-              <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Nos fabrications
-        </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Sur mesure</a>
-              <a class="dropdown-item" href="#">Couverture tôle</a>
-              <a class="dropdown-item" href="#">Couverture fibro</a>
+     <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Nos fabrications
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Sur mesure</a></li>
+    <li><a class="dropdown-item" href="#">Couverture tôle</a></li>
+    <li><a class="dropdown-item" href="#">Couverture fibro</a></li>
+  </ul>
+</div> 
+              <a class="nav-link text-light" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Site Agristandard 2000</a>
+                <a class="nav-link text-light" href="https://www.agristandard2000.fr/">Site Agristandard 2000</a>
               </li>
             </ul>
           </div>
