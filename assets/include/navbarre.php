@@ -15,19 +15,19 @@
                 <a class="nav-link text-light" href="index.php">L'entreprise</a>
               </li>
      <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Nos fabrications
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Sur mesure</a></li>
-    <li><a class="dropdown-item" href="#">Couverture tôle</a></li>
-    <li><a class="dropdown-item" href="#">Couverture fibro</a></li>
-  </ul>
+<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nos fabrications
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Sur mesure</a></li>
+            <li><a class="dropdown-item" href="#">Couverture tôle</a></li>
+            <li><a class="dropdown-item" href="#">Couverture fibro</a></li>
+          </ul>
 </div> 
-              <a class="nav-link text-light" href="#">Contact</a>
+              <a class="nav-link text-light" href="contact.php">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="https://www.agristandard2000.fr/">Site Agristandard 2000</a>
+                <a class="nav-link text-light" href="https://www.agristandard2000.fr/" target="_blank" rel="noopener noreferrer">Site Agristandard 2000</a>
               </li>
             </ul>
           </div>
@@ -35,6 +35,3 @@
     </nav>
   </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
