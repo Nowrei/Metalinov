@@ -19,9 +19,9 @@
             Nos fabrications
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Sur mesure</a></li>
-            <li><a class="dropdown-item" href="#">Couverture tôle</a></li>
-            <li><a class="dropdown-item" href="#">Couverture fibro</a></li>
+            <li><a class="dropdown-item" href="information.php">Informations</a></li>
+            <li><a class="dropdown-item" href="couverture-tole.php">Couverture tôle</a></li>
+            <li><a class="dropdown-item" href="couverture-fibro.php">Couverture fibro</a></li>
           </ul>
 </div> 
               <a class="nav-link text-light" href="contact.php">Contact</a>

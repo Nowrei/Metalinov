@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<?php 
-
-
-
-?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -117,8 +112,11 @@
   <textarea class="form-control" placeholder="Laissez votre message ici" id="message" style="height: 100px"></textarea>
   
 </div>
-
+<div class="row">
+      <div class="col-md-6">
   <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+</div>
+</div>
 </form>
     </div>
   </form>
