@@ -21,7 +21,7 @@
 
 <div class="w-auto p-3 " >
     <div class="w-75 p-3">
-        <h2 class="me-5 ms-5">Metalinov</h2>
+        <h2 class="me-5 ms-5 fw-bold display-4">Metalinov</h2>
         <h3 class="text-black-50 me-5 ms-5">Spécialiste de la charpente métallique</h3>
     </div>
 
