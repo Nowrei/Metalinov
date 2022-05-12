@@ -7,18 +7,6 @@ div.mister_separator {
 }
 
 
-/*
-What do we have here? A set of three responsive footers, 2, 3 and 4 columns each.
-In order to make it easier to implement a preferred footer into your project, I decided to keep all the necessary styles right into their sections without putting common styles apart.
-This entails some things that otherwise wouldn't've been considered elegant for this project itself, like IDs duplication, code overuse and so forth.
-There are only three selectors which are common for all the footers below. Don't forget to transfer them to your project. They go right below this description.
-After that, you can simply copy the code from the section with your footer - there's all styles you need.
-Thank you for your interest.
-*/
-
-
-/*============ COMMON STYLES. DON'T FORGET TO COPY THEM AS WELL! ===========*/
-
 footer.site-footer {
   padding: 60px 30px;
   background: #222222;
@@ -40,11 +28,6 @@ div#footer-grid {
 }
 
 
-
-
-
-
-
 /*============ footer 2 columns ===========*/
 
 footer#footer-2-cols div#left-footer-section {
@@ -55,6 +38,7 @@ footer#footer-2-cols div#left-footer-section {
 
 footer#footer-2-cols div#right-footer-section {
   flex-basis: 50%;
+  margin-top: 35px;
 }
 
 footer#footer-2-cols div#copyright-information div#footer-logo-section {
@@ -260,12 +244,22 @@ footer#footer-2-cols div#copyright-information div#social-buttons i.fa:hover {
   footer#footer-2-cols div#copyright-information div#social-buttons i.fa {
       font-size: 24pt;
   }
+
+  footer#footer-2-cols div#right-footer-section {
+    flex-basis: 50%;
+    margin-top: 35px;
+  }
 }
 
 @media screen and (max-width: 576px) {
 
   div#footer-grid {
       width: 100%;
+  }
+
+  footer#footer-2-cols div#right-footer-section {
+    flex-basis: 50%;
+    margin-top: 0px;
   }
 
   footer#footer-2-cols div#footer-search input {
