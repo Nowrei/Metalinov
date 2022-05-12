@@ -8,16 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https:////cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="assets/styles/entreprise.css">
-    <link rel="stylesheet" href="assets/styles/footer.css">
-    <link rel="stylesheet" href="assets/styles/back.css">
+    <link rel="stylesheet" href="../assets/styles/entreprise.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+    <link rel="stylesheet" href="../assets/styles/back.css">
     <script src="https://kit.fontawesome.com/ee02dbcf72.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php include 'assets/include/navbarre.php' ?>
+<?php include '../assets/include/navbarre-entre.php' ?>
 
 <div class="w-auto p-3 " >
     <div class="w-75 p-3">
@@ -64,7 +64,7 @@
             Pour l’expédition, les colis sont préparés par nos soins dans nos espaces de stockage et comprennent l’ensemble des éléments nécessaires au montage (boulonnerie et crosse d’ancrage pour la charpente, faitière et visserie pour la couverture, contreventement, ancrage au sol). Notre bureau d’étude calcule également les descentes de charge nécessaires pour l’installation de votre structure. Nous vous conseillons de faire appel à un maçon professionnel ou un bureau d’étude pour dimensionner les massifs de béton sur le terrain.<br><br>
             La livraison de nos structures est assurée par un transporteur partenaire d’Agri Standard sur toute la France. Les expéditions hors-France sont également possibles.<br><br>
             Le montage peut être assuré par notre réseau de poseurs dans toute la France.<br><br>
-            <a class="text-secondary" href="contact.php" target="_blank" rel="noopener noreferrer">Contactez-nous</a> pour en connaître la liste.
+            <a class="text-secondary" href="../contract/contact.php" target="_blank" rel="noopener noreferrer">Contactez-nous</a> pour en connaître la liste.
             </p>
         
     </div>
@@ -77,10 +77,10 @@
 
 
 <a id="button" class="text-decoration-none"></a>
-<?php include 'assets/include/footer.php' ?>
+<?php include '../assets/include/footer-entre.php' ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="assets/js/back.js"></script>
+    <script src="../assets/js/back.js"></script>
 </body>
