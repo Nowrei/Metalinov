@@ -21,8 +21,8 @@
 <body>
 <?php include 'assets/include/navbarre.php' ?>
 <div class="information">
-<h1>Information<br></h1>
-<h2 class="text-muted">Tous nos modèles en Kit comprennent :</small></h2>
+<h1>Information
+<h2>Tous nos modèles en Kit comprennent :
 </div>
 <div class="m-information col-10 mb-5 mx-auto">
         <div class="row">
@@ -44,18 +44,18 @@
 <div class="card justify-content-center">
 
 		<nav class="vertical-nav ">
-			<div class="nav nav-tabs justify-content-center mb-4 text-dark" id="nav-tab" role="tablist" alt="Responsive">
-				<button class="nav-link active text-dark" id="nav-acier-tab" data-bs-toggle="tab" data-bs-target="#nav-acier" type="button" role="tab" aria-controls="nav-acier" aria-selected="true"><p class="fw-bold">Couverture bac acier</button>
-				<button class="nav-link text-dark" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-fibro" type="button" role="tab" aria-controls="nav-fibro" aria-selected="false"><p class="fw-bold">Couverture fibrociment</button>
-				<button class="nav-link text-dark" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-appli" type="button" role="tab" aria-controls="nav-appli" aria-selected="false"><p class="fw-bold">Champs d'application</button>
-        <button class="nav-link text-dark" id="nav-charpente-tab" data-bs-toggle="tab" data-bs-target="#nav-charpente" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><p class="fw-bold">Charpente métallique</button>
-        <button class="nav-link text-dark" id="nav-serie-tab" data-bs-toggle="tab" data-bs-target="#nav-serie" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><p class="fw-bold">Nos séries standards</button>
-        <button class="nav-link text-dark" id="nav-contreventements-tab" data-bs-toggle="tab" data-bs-target="#nav-contreventements" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><p class="fw-bold">Contreventements</button>
-        <button class="nav-link text-dark" id="nav-ancrage-tab" data-bs-toggle="tab" data-bs-target="#nav-ancrage" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><p class="fw-bold">Ancrages au sol</button>
-        <button class="nav-link text-dark" id="nav-boulonnerie-tab" data-bs-toggle="tab" data-bs-target="#nav-boulonnerie" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><p class="fw-bold">Boulonnerie</button>
+			<div class="nav nav-tabs justify-content-center mb-4 text-dark " id="nav-tab" role="tablist" alt="Responsive">
+				<button class="nav-link active text-dark border border-2" id="nav-acier-tab" data-bs-toggle="tab" data-bs-target="#nav-acier" type="button" role="tab" aria-controls="nav-acier" aria-selected="true">Couverture bac acier</button>
+				<button class="nav-link text-dark border border-2" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-fibro" type="button" role="tab" aria-controls="nav-fibro" aria-selected="false">Couverture fibrociment</button>
+				<button class="nav-link text-dark border border-2" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-appli" type="button" role="tab" aria-controls="nav-appli" aria-selected="false">Champs d'application</button>
+        <button class="nav-link text-dark border border-2" id="nav-charpente-tab" data-bs-toggle="tab" data-bs-target="#nav-charpente" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Charpente métallique</button>
+        <button class="nav-link text-dark border border-2" id="nav-serie-tab" data-bs-toggle="tab" data-bs-target="#nav-serie" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Nos séries standards</button>
+        <button class="nav-link text-dark border border-2" id="nav-contreventements-tab" data-bs-toggle="tab" data-bs-target="#nav-contreventements" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contreventements</button>
+        <button class="nav-link text-dark border border-2" id="nav-ancrage-tab" data-bs-toggle="tab" data-bs-target="#nav-ancrage" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Ancrages au sol</button>
+        <button class="nav-link text-dark border border-2" id="nav-boulonnerie-tab" data-bs-toggle="tab" data-bs-target="#nav-boulonnerie" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Boulonnerie</button>
 	    </div>
 		</nav>
-		<div class="tab-content p-3 border bg-light" id="nav-tabContent">
+		<div class="tab-content p-3 border border-3 bg-light" id="nav-tabContent">
 			<div class="tab-pane fade active show" id="nav-acier" role="tabpanel" aria-labelledby="nav-acier-tab">
         <div class="d-flex flex-wrap-reverse">
           <div class="col-lg-4 col-md-8 mb-8">

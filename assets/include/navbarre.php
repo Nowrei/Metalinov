@@ -12,7 +12,7 @@
           <div class="collapse navbar-collapse" id="navbar-content">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-light" href="index.php">L'entreprise</a>
+                <a class="nav-link text-light" href="entreprise.php">L'entreprise</a>
               </li>
      <div class="dropdown">
 <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

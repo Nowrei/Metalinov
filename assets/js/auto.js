@@ -80,7 +80,7 @@ $("#adresse").keyup(function(event) {
     // On lance la requête sur l'API
     $.get('https://api-adresse.data.gouv.fr/search/', {
       q: rue,
-      limit: 30,
+      limit: 15,
       autocomplete: 1
     }, function(data, status, xhr) {
       let liste = "";
