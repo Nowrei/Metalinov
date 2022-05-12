@@ -12,6 +12,7 @@
             <div id="right-footer-section" class="footer-section">
                 <div class="footer-links">
                     <ul>
+                        <li role="menuitem"><a href="#">Accueil</a></li>
                         <li role="menuitem"><a href="entreprise/entreprise.php">L'entreprise</a></li>
                         <li role="menuitem"><a href="information.php">Information</a></li>
                         <li role="menuitem"><a href="contact.php">Nous contactez</a></li>
