@@ -12,10 +12,10 @@
             <div id="right-footer-section" class="footer-section">
                 <div class="footer-links">
                     <ul>
-                        <li role="menuitem"><a href="../index.php">Accueil</a></li>
-                        <li role="menuitem"><a href="../entreprise/entreprise.php">L'entreprise</a></li>
+                        <li role="menuitem"><a href="../../index.php">Accueil</a></li>
+                        <li role="menuitem"><a href="../../entreprise/entreprise.php">L'entreprise</a></li>
                         <li role="menuitem"><a href="../information.php">Information</a></li>
-                        <li role="menuitem"><a href="../contact/contact.php">Nous contactez</a></li>
+                        <li role="menuitem"><a href="../../contact/contact.php">Nous contactez</a></li>
                         <li role="menuitem"><a href="#">Condition d'utilisation<br>& Information légal</a></li>
                     </ul>
                 </div>

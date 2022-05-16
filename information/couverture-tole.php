@@ -16,10 +16,65 @@
 </head>
 <body>
 <?php include '../assets/include/navbarre-info.php' ?>
+<div>
+<div class="m-information col-10 mb-5 mx-auto">
+        <div class="row">
+            <div class="card text-dark mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
+                <div class="card-body" style="text-align: center;">
+                    <h4 class="card-title mt-2 text-center text-secondary">Monopente + Auvent</h4>
+                </div>
+                <a href="couv-tôle-monopente+auvent/monopente+auvent.php"><img src="../assets/img/cat-monopente-auvent.gif" ></src>
+                </a>
+            </div>
+            <div class="card text-white mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
+                <div class="card-body" style="text-align: center;">
+                    <h4 class="card-title mt-2 text-center text-secondary">Monopente</h5>
+                </div>
+                <a href="../index.php"><img src="../assets/img/cat-monopente.gif" ></src>
+                </a>
+                
+            </div>
+        </div>
+</div>
+
+<div class="m-information col-10 mb-5 mx-auto">
+        <div class="row">
+            <div class="card text-dark mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
+                <div class="card-body" style="text-align: center;">
+                    <h4 class="card-title mt-2 text-center text-secondary">Bipente</h4>
+                </div>
+                <a href="../index.php"><img src="../assets/img/cat-bipente.gif" ></src>
+                </a>
+            </div>
+            <div class="card text-white mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
+                <div class="card-body" style="text-align: center;">
+                    <h4 class="card-title mt-2 text-center text-secondary">Auvent</h5>
+                </div>
+                <a href="../index.php"><img src="../assets/img/cat-auvent.gif" ></src>
+                </a>
+                
+            </div>
+        </div>
+</div>
+
+<div class="m-information col-10 mb-5 mx-auto">
+        <div class="row">
+            <div class="card text-dark mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
+                <div class="card-body" style="text-align: center;">
+                    <h4 class="card-title mt-2 text-center text-secondary">Appentis</h4>
+                </div>
+                <a href="../index.php"><img src="../assets/img/cat-appentis.gif" ></src>
+                </a>
+            </div>
+            
+</div>
 
 
 
-<a id="button"></a>
+</div>
+
+
+<a id="button" class="text-decoration-none"></a>
 <?php include '../assets/include/footer-info.php' ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"

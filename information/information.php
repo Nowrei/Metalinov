@@ -66,15 +66,15 @@
 
               <h2 class="text-center"> Couverture bac-acier</h2><br>
               <p>
-                Pente 15%
+                <strong>Pente</strong> 15%
                 <hr>
-                Tôle nervurée >épaisseur 63/100e 1er choix prélaquée, 25 microns.
+                <strong>Tôle nervurée</strong>épaisseur 63/100e 1er choix prélaquée, 25 microns.
                 <hr>
-                Fixation par vis auto-perceuse + rondelle néoprène + cavalier laqué.
+                <strong>Fixation</strong> par vis auto-perceuse + rondelle néoprène + cavalier laqué.
                 <hr>
-                Faîtières en tôle pliée 63/100e prélaquée, 25 microns.
+                <strong>Faîtières</strong> en tôle pliée 63/100e prélaquée, 25 microns.
                 <hr>
-                Couleur <a class="text-secondary" href="https://www.agristandard2000.fr/wp-content/uploads/2020/01/brochure-couleurs-2019.pdf" target="_blank" rel="noopener noreferrer">Consulter les teintes standards</a>
+                <strong>Couleur</strong> <a class="text-secondary" href="https://www.agristandard2000.fr/wp-content/uploads/2020/01/brochure-couleurs-2019.pdf" target="_blank" rel="noopener noreferrer">Consulter les teintes standards</a>
               <hr>
               </p>
             </div>
@@ -91,15 +91,15 @@
 
               <h2 class="text-center"> Couverture fibrociment </h2><br>
               <p>
-                Pente 22%
+                <strong>Pente</strong> 22%
                 <hr>
-                Fibrociment sans amiante avec avis technique, conforme au DTU 40.37.
+                <strong>Fibrociment</strong> sans amiante avec avis technique, conforme au DTU 40.37.
                 <hr>
-                Fixation par vis auto-perceuse + rondelle néoprène + plaquette galvanisée
+                <strong>Fixation</strong>par vis auto-perceuse + rondelle néoprène + plaquette galvanisée
                 <hr>
-                Faîtières à charnière en fibrociment, faîtière à charnière d’aération en fibrociment (3 pièces).
+                <strong>Faîtières</strong> à charnière en fibrociment, faîtière à charnière d’aération en fibrociment (3 pièces).
                 <hr>
-                Couleur <a class="text-secondary" href="https://www.agristandard2000.fr/wp-content/uploads/2020/01/brochure-couleurs-2019.pdf" target="_blank" rel="noopener noreferrer">Consulter les teintes standards</a>
+                <strong>Couleur</strong> <a class="text-secondary" href="https://www.agristandard2000.fr/wp-content/uploads/2020/01/brochure-couleurs-2019.pdf" target="_blank" rel="noopener noreferrer">Consulter les teintes standards</a>
               <hr>
               </p>
             </div>
@@ -136,9 +136,9 @@
 
               <h2 class="text-center"> Charpente métalique </h2><br>
               <p>
-                Poutrelles IPE en acier S235JR, S275JR et S355JR avec sur demande certificat d’acier 1er choix.
+                <strong>Poutrelles IPE</strong> en acier S235JR, S275JR et S355JR avec sur demande certificat d’acier 1er choix.
                 <hr>
-                Finition peinture une couche antirouille brun rouge.
+                <strong>Finition peinture</strong> une couche antirouille brun rouge.
                 <hr>
               </p>
             </div>
@@ -155,13 +155,13 @@
 
               <h2 class="text-center"> Nos séries standards </h2><br>
               <p>
-                Kit avec toiture fibrociment ou bac acier
+                <strong>Kit</strong> avec toiture fibrociment ou bac acier
                 <hr>
-                Gamme de base en travées de 4, 5 et 6 m.
+                <strong>Gamme de base</strong> en travées de 4, 5 et 6 m.
                 <hr>
-                Hauteurs standards de 4, 5, 6, 7 et 8 m suivant modèles.
+                <strong>Hauteurs standards</strong>de 4, 5, 6, 7 et 8 m suivant modèles.
                 <hr>
-                Bâtiments avec travées et hauteurs hors standard :<br> 
+                <strong>Bâtiments</strong> avec travées et hauteurs hors standard :<br> 
                 <a class="text-secondary" href="contact.php" target="_blank" rel="noopener noreferrer">Nous contactez</a>
               <hr>
               </p>
@@ -179,7 +179,7 @@
 
               <h2 class="text-center">Contreventements </h2><br>
               <p>
-                (Croix de St André). Ils assurent la stabilité du bâtiment et devront toujours rester en place (peuvent être remplacés par des portiques de stabilité).
+                <strong>Croix de St André</strong>. Ils assurent la stabilité du bâtiment et devront toujours rester en place (peuvent être remplacés par des portiques de stabilité).
                 <br><a class="text-secondary" href="contact.php" target="_blank" rel="noopener noreferrer">Nous contactez</a>
               <hr>
               </p>
