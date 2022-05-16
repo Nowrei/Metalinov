@@ -64,7 +64,7 @@
             Pour l’expédition, les colis sont préparés par nos soins dans nos espaces de stockage et comprennent l’ensemble des éléments nécessaires au montage (boulonnerie et crosse d’ancrage pour la charpente, faitière et visserie pour la couverture, contreventement, ancrage au sol). Notre bureau d’étude calcule également les descentes de charge nécessaires pour l’installation de votre structure. Nous vous conseillons de faire appel à un maçon professionnel ou un bureau d’étude pour dimensionner les massifs de béton sur le terrain.<br><br>
             La livraison de nos structures est assurée par un transporteur partenaire d’Agri Standard sur toute la France. Les expéditions hors-France sont également possibles.<br><br>
             Le montage peut être assuré par notre réseau de poseurs dans toute la France.<br><br>
-            <a class="text-secondary" href="../contract/contact.php" target="_blank" rel="noopener noreferrer">Contactez-nous</a> pour en connaître la liste.
+            <a class="text-secondary" href="../contact/contact.php" target="_blank" rel="noopener noreferrer">Contactez-nous</a> pour en connaître la liste.
             </p>
         
     </div>

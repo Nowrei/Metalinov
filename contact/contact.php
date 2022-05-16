@@ -96,7 +96,15 @@
 
         <div class="form-group">
           <label for="Pays">Pays</label>
-          <input type="text" class="form-control" id="pays" placeholder="Pays">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>France</option>
+            <option value="1">Allemagne</option>
+            <option value="2">Belgique</option>
+            <option value="3">Suisse</option>
+            <option value="4">Italie</option>
+            <option value="5">Luxembourg</option>7
+            <option value="6">Espagne</option>
+</select>
         </div>
       </div>
       <!--  col-md-6   -->
