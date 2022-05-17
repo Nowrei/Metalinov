@@ -19,7 +19,7 @@
 <div class="w-100 p-3">
         
         <h3 class="text-dark-50 me-5 ms-5 mt-4">
-            Modèles de bâtiments standards couverture tôle - Appentis tôle
+            Modèles de bâtiments standards couverture fibro - Appentis fibro
         </h3>
     </div>
 
@@ -30,21 +30,32 @@
       <div class="row">
         <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 mx-auto image">
         <div class="card-body" style="text-align: center;">
-                    <h4 class="card-title mt-2 text-center text-secondary">Appentis de largeur 2m</h4>
+                    <h4 class="card-title mt-2 text-center text-secondary">Appentis de largeur 6.68m</h4>
                 </div>
           <div class="img-wrapper">
-            <a href="../../assets/img/tole-fibro/zoom_av02.gif"><img src="../../assets/img/tole-fibro/zoom_av02.gif" class="img-responsive"></a>
+            <a href="../../assets/img/tole-fibro/zoom_af07.gif"><img src="../../assets/img/tole-fibro/zoom_af07.gif" class="img-responsive"></a>
             <div class="img-overlay">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
             </div>
           </div>
         </div>
         <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 mx-auto image">
-        <div class="card-body" style="text-align: center;">
-                    <h4 class="card-title mt-2 text-center text-secondary">Appentis de largeur 4m</h4>
+         <div class="card-body" style="text-align: center;">
+                    <h4 class="card-title mt-2 text-center text-secondary">Appentis de largeur 8.03m</h4>
                 </div>
           <div class="img-wrapper">
-            <a href="../../assets/img/tole-fibro/zoom_av04.gif"><img src="../../assets/img/tole-fibro/zoom_av04.gif" class="img-responsive"></a>
+            <a href="../../assets/img/tole-fibro/zoom_af08.gif"><img src="../../assets/img/tole-fibro/zoom_af08.gif" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 mx-auto image">
+         <div class="card-body" style="text-align: center;">
+                    <h4 class="card-title mt-2 text-center text-secondary">Appentis de largeur 10.74m</h4>
+                </div>
+          <div class="img-wrapper">
+            <a href="../../assets/img/tole-fibro/zoom_af11.gif"><img src="../../assets/img/tole-fibro/zoom_af11.gif" class="img-responsive"></a>
             <div class="img-overlay">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
             </div>
@@ -57,7 +68,7 @@
 
 </div>
 
-<a class="text-secondary" href="../couverture-tole.php" ><h3 class=" ms-5 mt-4 fs-5 fw-semibold">Retour au catalogue de couverture tôle</h3></a>
+<a class="text-secondary" href="../couverture-fibro.php" ><h3 class=" ms-5 mt-4 fs-5 fw-semibold">Retour au catalogue de couverture fibro</h3></a>
 <a id="button" class="text-decoration-none"></a>
 <?php include '../../assets/include/footer-couv.php' ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -33,8 +33,8 @@
     <div class="container-fluid">
       <div class="row justify-content-end">
         <div class="d-flex flex-wrap-reverse">
-          <div class="col-lg-3 col-md-5 mb-4 mb-md-0 align-self-center">
-            <img src="assets/img/Capture.png" class="img-fluid" alt="Responsive image">
+          <div class="col-lg-4 col-md-4 mb-4 mb-md-0 ms-2 align-self-center">
+            <img src="assets/img/DSC_0074.jfif" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col align-self-center">
             <div class="mx-auto  w-75">
