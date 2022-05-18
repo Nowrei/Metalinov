@@ -180,14 +180,12 @@
   </div>
 </div>
 
-<div class="video">
+<div class="embedresize">
+<div>
+<iframe allowfullscreen="" frameborder="0" height="315" src="assets/img/Agristandard-2016-mp4_12.mp4" width="560"></iframe>
+</div>
+</div>
 
-<video class ="metal" controls>
-  <source src="https://www.agristandard2000.fr/wp-content/uploads/2019/12/Agristandard-2016-mp4_12.mp4" type="video/mp4">
-  <source src="https://www.agristandard2000.fr/wp-content/uploads/2019/12/Agristandard-2016-mp4_12.mp4" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-</div> 
 
 
 <a id="button"></a>

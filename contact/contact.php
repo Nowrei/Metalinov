@@ -122,7 +122,7 @@
 </div>
 <div class="row">
       <div class="col-md-6">
-  <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+  <button type="submit" class="btn btn-primary" name="submit">Envoyer</button>
 </div>
 </div>
 </form>
