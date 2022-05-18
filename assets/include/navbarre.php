@@ -2,7 +2,7 @@
     <nav class="navbar navbar-dark bg-secondary text-light">
       <div class="container justify-content-between">
         <div class="d-none d-lg-block">
-          <a href="index.php"><img src="assets/img/logo-removebg-preview.png" alt=""  height="30"></a>
+          <a href="index.php" class="navbar-brand"><img src="assets/img/logo-removebg-preview.png" alt=""  height="30"></a>
         </div>
         <div class="navbar navbar-expand-lg">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
@@ -27,7 +27,7 @@
               <a class="nav-link text-light" href="contact/contact.php">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="https://www.agristandard2000.fr/" target="_blank" rel="noopener noreferrer">Site Agristandard 2000</a>
+                <a class="nav-link text-light" href="https://www.agristandard2000.fr/" target="_blank" rel="#">Site Agristandard 2000</a>
               </li>
             </ul>
           </div>

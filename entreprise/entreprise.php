@@ -26,7 +26,9 @@
     </div>
 
     <div class="w-100 p-3 ">
-        <div class="w-75 me-5 ms-5"><p>Agri Standard a été fondé en 1987 dans les Ardennes berceau de l’industrie métallurgique. Depuis 1990, elle est installée à Tournes sur la Zone d’activités Emeraude, dans de vastes locaux adaptés à ses unités de productions (12.000m2 de surface couverte). Pour répondre avec efficacité et dans les meilleurs délais aux besoins de ses clients, notre société emploie trente techniciens qualifiés dans ses ateliers de fabrication et dispose de lignes automatisées pouvant traiter des pièces jusqu’à 18 mètres de longueur et 1,25 m de hauteur.</p>
+        <div class="w-75 me-5 ms-5"><p>Spécialiste des structures en charpentes métalliques depuis plus de 30 ans, Métalinov répond a vos besoins. De la conception à la fabrication, notre société propose des réalisations standard ou sur mesure. Notre importante gamme de bâtiment s’adapte aux nombreux besoins du secteur terciaire. Installation de panneaux photovoltaïques, création d’ateliers d’artisan, avec ou sans bureau, avec ou sans mezzanine… Toute demande peut être étudiée et faire l’objet d’une conception sur mesure avec de nombreux types de matériaux pour des usages diversifiés en couverture et bardage (tôle acier, fibrociment, panneaux sandwich, tôle perforée, etc.).
+
+</p>
         </div>
     </div>
 </div>
@@ -37,7 +39,7 @@
    
 
     <div class="w-75 p-3 bg-light me-5 ms-5">
-        <p>Agri Standard a été fondé en 1987 dans les Ardennes berceau de l’industrie métallurgique. Depuis 1990, elle est installée à Tournes sur la Zone d’activités Emeraude, dans de vastes locaux adaptés à ses unités de productions (12.000m2 de surface couverte). Pour répondre avec efficacité et dans les meilleurs délais aux besoins de ses clients, notre société emploie trente techniciens qualifiés dans ses ateliers de fabrication et dispose de lignes automatisées pouvant traiter des pièces jusqu’à 18 mètres de longueur et 1,25 m de hauteur.</p>
+        <p>Metalinov a été fondé en 1987 dans les Ardennes berceau de l’industrie métallurgique. Depuis 1990, elle est installée à Tournes sur la Zone d’activités Emeraude, dans de vastes locaux adaptés à ses unités de productions (12.000m2 de surface couverte). Pour répondre avec efficacité et dans les meilleurs délais aux besoins de ses clients, notre société emploie trente techniciens qualifiés dans ses ateliers de fabrication et dispose de lignes automatisées pouvant traiter des pièces jusqu’à 18 mètres de longueur et 1,25 m de hauteur.</p>
         
     </div>
 </div>
@@ -48,7 +50,7 @@
 
 
     <div class="w-75 p-3 bg-secondary text-light me-5 ms-5">
-        <p>Ossature de bâtiment en structures métalliques, couverture, bardage… Pour l’ensemble de son activité de construction, Agri Standard répond aux obligations de la qualification Qualibat 2411, renouvelée tous les 4 ans. Elle utilise des aciers de première catégorie avec des certificats matières (poutrelle IPE S275JR) et garantit ses réalisations 10 ans. L’ensemble de ses constructions sont fabriquées dans le respect des réglementations et normes en vigueur. Attentive à garantir à ses clients les meilleurs produits et les bonnes pratiques, Agri standard est engagé depuis plusieurs années dans le nouveau processus de certification européen : EN1090 débouchant sur le marquage CE.</p>
+        <p>Ossature de bâtiment en structures métalliques, couverture, bardage… Pour l’ensemble de son activité de construction, Metalinov répond aux obligations de la qualification Qualibat 2411, renouvelée tous les 4 ans. Elle utilise des aciers de première catégorie avec des certificats matières (poutrelle IPE S275JR) et garantit ses réalisations 10 ans. L’ensemble de ses constructions sont fabriquées dans le respect des réglementations et normes en vigueur. Attentive à garantir à ses clients les meilleurs produits et les bonnes pratiques, Metalinov est engagé depuis plusieurs années dans le nouveau processus de certification européen : EN1090 débouchant sur le marquage CE.</p>
         
     </div>
 </div>
@@ -60,9 +62,9 @@
 
     <div class="w-75 p-3 bg-light me-5 ms-5">
             <p>
-            Du choix de votre structure à sa livraison, Agri standard vous accompagne. Consultez-nous pour établir votre bon de commande. Nous vous assisterons aussi pour optimiser votre choix en fonction du lieu de construction de votre bâtiment.<br><br>
+            Du choix de votre structure à sa livraison, Metalinov vous accompagne. Consultez-nous pour établir votre bon de commande. Nous vous assisterons aussi pour optimiser votre choix en fonction du lieu de construction de votre bâtiment.<br><br>
             Pour l’expédition, les colis sont préparés par nos soins dans nos espaces de stockage et comprennent l’ensemble des éléments nécessaires au montage (boulonnerie et crosse d’ancrage pour la charpente, faitière et visserie pour la couverture, contreventement, ancrage au sol). Notre bureau d’étude calcule également les descentes de charge nécessaires pour l’installation de votre structure. Nous vous conseillons de faire appel à un maçon professionnel ou un bureau d’étude pour dimensionner les massifs de béton sur le terrain.<br><br>
-            La livraison de nos structures est assurée par un transporteur partenaire d’Agri Standard sur toute la France. Les expéditions hors-France sont également possibles.<br><br>
+            La livraison de nos structures est assurée par un transporteur partenaire d’Metalinov sur toute la France. Les expéditions hors-France sont également possibles.<br><br>
             Le montage peut être assuré par notre réseau de poseurs dans toute la France.<br><br>
             <a class="text-secondary" href="../contact/contact.php" target="_blank" rel="noopener noreferrer">Contactez-nous</a> pour en connaître la liste.
             </p>

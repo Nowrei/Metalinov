@@ -145,7 +145,7 @@
 
               <h2 class="text-center">Montage</h2><br>
               <p class="lh-base">Nos partenaires, spécialisés dans le montage de bâtiments industriels à structure métallique interviennent en permanence sur toute la France. Vous cherchez une équipe de poseurs, 
-              <a class="text-secondary" href="contact.php" target="_blank" rel="noopener noreferrer">contactez-nous</a> dès maintenant.
+              <a class="text-secondary" href="contact/contact.php" target="_blank" rel="noopener noreferrer">contactez-nous</a> dès maintenant.
               </p>
             </div>
           </div>
@@ -179,10 +179,11 @@
     </div>
   </div>
 </div>
-
+<div class="mt-5">
 <div class="embedresize">
 <div>
-<iframe allowfullscreen="" frameborder="0" height="315" src="assets/img/Agristandard-2016-mp4_12.mp4" width="560"></iframe>
+<iframe allowfullscreen="" frameborder="0" height="315" src="assets/img/Agristandard-2016-mp4_12.mp4" width="700" sandbox></iframe>
+</div>
 </div>
 </div>
 
