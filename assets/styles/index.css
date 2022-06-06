@@ -115,12 +115,18 @@ margin-top: 100px !important;
 .photo {
 
   height: 600px;
-  background-position-y: 0px;
+  background-position-x: center;
+}
+
+.image {
+
+  margin-top:200px,
 }
 .center {
 
-  padding: 0px;
-  width: 90%;
+  padding: 50px;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .photo h1 {
@@ -129,6 +135,7 @@ margin-top: 100px !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .slide {
