@@ -14,11 +14,11 @@
 </head>
 
 <body>
-<?php include '../assets/include/navbarre-contact.php' ?>
-<div class="alert alert-success alert-dismissible" id="success" style="display:none;">
+
+	<div class="alert alert-success alert-dismissible" id="success" style="display:none;">
 	  <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
 	</div>
-  <form method="post" action="../assets/php/traitement.php" id="form">
+  <form method="post" action="" id="form">
 <div class="container">
   <h2>Contactez-nous</h2>
 <div class="row">
@@ -127,7 +127,6 @@
     </div>
   </form>
 </div>
-<?php include '../assets/include/footer-contact.php' ?>
 <script>
 $(document).ready(function() {
 $('#butsave').on('click', function() {
@@ -145,7 +144,7 @@ var objet = $('#objet').val();
 var message = $('#message').val();
 if(societe!="" && email!="" && phone!="" && ville!=""){
 	$.ajax({
-		url: "../assets/php/traitement.php",
+		url: "traitement.php",
 		type: "POST",
 		data: {
 			nom: nom,
@@ -182,7 +181,7 @@ if(societe!="" && email!="" && phone!="" && ville!=""){
 });
 });
 </script>
-<script src="../assets/js/auto.js"></script>
+<script src="assets/js/auto.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">

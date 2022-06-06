@@ -38,7 +38,7 @@
           </div>
           <div class="col align-self-center">
             <div class="mx-auto  w-75">
-              <p>Spécialiste des structures en charpentes métalliques depuis plus de 30 ans, Métalinov répond a vos besoins. De la conception à la fabrication, notre société propose des réalisations standard ou sur mesure. Notre importante gamme de bâtiment  s’adapte aux nombreux besoins du secteur terciaire. Installation de panneaux photovoltaïques, création d’ateliers d’artisan, avec ou sans bureau, avec ou sans mezzanine… Toute demande peut être étudiée et faire l’objet d’une conception sur mesure avec de nombreux types de matériaux pour des usages diversifiés en couverture et bardage (tôle acier, fibrociment, panneaux sandwich, tôle perforée, etc.).</p>  
+              <p>Depuis 1987, d’abord sous l’enseigne « Bâtimétal », et depuis janvier 2005 sous l’enseigne « Métalinov », la société est spécialisée dans l’étude et la réalisation de bâtiments professionnels à structure métallique. Notre longue expérience, notre bureau d’études parfaitement adapté aux problèmes les plus spécifiques. Un outil informatique de pointe, des ingénieurs, des dessinateurs à votre écoute, pour étudier, concevoir et coordonner la réalisation de votre projet. Des contrôles continus et rigoureux tout au long du cycle de la réalisation vous assurent un produit fini de qualité et sans défaut.</p>  
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
       <div class="accordion-body">
        <div class="d-flex flex-wrap-reverse">
           <div class="col-lg-4 col-md-8 mb-8">
-            <img src="assets/img/montage.jpg" class="img-fluid" alt="Responsive image">
+            <img src="assets/img/front.jpg" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col align-self-center">
             <div class="mx-auto  w-75">
