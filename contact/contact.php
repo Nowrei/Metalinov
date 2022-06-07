@@ -99,12 +99,12 @@
           <label for="Pays">Pays</label>
           <select class="form-select" aria-label="Default select example" id="pays" name="pays">
             <option selected>France</option>
-            <option value="1">Allemagne</option>
-            <option value="2">Belgique</option>
-            <option value="3">Suisse</option>
-            <option value="4">Italie</option>
-            <option value="5">Luxembourg</option>7
-            <option value="6">Espagne</option>
+            <option value="Allemagne">Allemagne</option>
+            <option value="Belgique">Belgique</option>
+            <option value="Suisse">Suisse</option>
+            <option value="Italie">Italie</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Espagne">Espagne</option>
           </select>
         </div>
          </div>
