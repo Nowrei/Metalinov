@@ -39,17 +39,14 @@
       return true;
     }
 
-
-
-
-
     // Fetch All Users From Database
     public function read() {
-      $sql = "SELECT * FROM utilisateur";
+      $sql = "SELECT * FROM entreprise WHERE mail_entreprise = :mail_entreprise";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute();
       $result = $stmt->fetchAll();
       return $result;
+
     }
 
     // Fetch Single User From Database

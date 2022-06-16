@@ -25,43 +25,24 @@
         <div class="modal-body">
           <form id="add-user-form" class="p-2" novalidate>
             <div class="row mb-3 gx-3">
-              <div class="col">
-                <input type="text" name="nom" class="form-control form-control-lg" placeholder="Nom" required>
-                <div class="invalid-feedback">Un nom est requis!</div>
-              </div>
-
-              <div class="col">
-                <input type="text" name="prenom" class="form-control form-control-lg" placeholder="Prenom" required>
-                <div class="invalid-feedback">Un prenom est requis!</div>
-              </div>
-            </div>
+              
 
             <div class="mb-3">
-              <input type="text" name="entreprise" class="form-control form-control-lg" placeholder="Entrer le nom de votre entreprise" required>
+              <input type="text" name="identifiant" class="form-control form-control-lg" placeholder="Entrer votre entreprise/ adresse e-mail" required>
               <div class="invalid-feedback">Un nom d'entreprise est requis!</div>
             </div>
 
             <div class="mb-3">
-              <input type="text" name="mail" class="form-control form-control-lg" placeholder="Entrer une adresse E-mail" required>
+              <input type="password" name="mdp" class="form-control form-control-lg" placeholder="Entrer votre mot de passe" required>
               <div class="invalid-feedback">Un E-mail est requis!</div>
             </div>
-            <div class="mb-3">
-              <input type="password" name="mdp" class="form-control form-control-lg" placeholder="Entrer un mot de passe" required>
-              <div class="invalid-feedback">Un mot de passe est requis!</div>
-            </div>
-            <div class="mb-3">
-              <input type="password" name="mdp1" class="form-control form-control-lg" placeholder="Confirmer le mot de passe" required>
-              <div class="invalid-feedback">Un mot de passe est requis</div>
-            </div>
-
-
 
             <div class="mb-3">
               <input type="submit" value="Ajouter Utilisateur" class="btn btn-primary btn-block btn-lg" id="add-user-btn">
             </div>
             <hr>
             <div class="mb-3">
-                Déjà inscris ? <a href=#>Connectez-vous</a>
+                Pas encore inscrit ? <a href=#>Inscrivez-vous.</a>
             </div>
           </form>
         </div>
@@ -72,6 +53,6 @@
 
 
     
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/connection.js"></script>
 </body>
 </html>

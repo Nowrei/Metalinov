@@ -41,10 +41,10 @@ if ($password == $password1){
         ":prenom_entreprise" => $prenom,
         ":entreprise_entreprise" => $entreprise,
         ':mail_entreprise' => $mail,
-        ':mdp_entreprise' => $password
+        'mdp_entreprise' => $password
    
     )); 
-    header ("location: ../../index.php");
+    header ("location: ../../index.php?message=succes");
 
     }else{ echo $util->showMessage('danger', 'Vous êtes déjà inscrit');}
 }else{
