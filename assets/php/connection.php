@@ -26,7 +26,7 @@ if ( $count == 1) {
                     $_SESSION['id_entreprise'] = $resultat['id_entreprise'];
                     $_SESSION['entreprise_entreprise'] = $resultat['entreprise_entreprise'];
                     
-                    header("location: http://localhost/Metalinov/");
+                    echo $util->showMessage('success', 'Vous êtes bien inscrit, <a href="../../Metalinov/index.php">Retour à l'."'accueil".'</a>');
 
 
 

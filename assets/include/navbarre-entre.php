@@ -24,7 +24,34 @@
             <li><a class="dropdown-item" href="../information/couverture-fibro.php">Couverture fibro</a></li>
           </ul>
 </div> 
-              <a class="nav-link text-light" href="../contact/contact.php">Contact</a>
+<div class="dropdown">
+<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Profil
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+          <?php 
+            if (isset($_SESSION['entreprise_entreprise'])) {
+              ?>
+            <a class="dropdown-item" href="contact.php">Contact</a>
+            <?php 
+              if(isset($_SESSION['nom_candidat'])) { ?>
+            <li><a class="dropdown-item" href="projet.php" >Ajouter un projet</a></li>
+            <li><a class="dropdown-item" href="crud_projet.php" >Gestion projet</a></li>
+            <li><a class="dropdown-item" href="utilisateur.php" >Gestion utilisateurs</a></li>
+            <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
+
+            <?php }else {?>
+            <li><a class="dropdown-item" href="projet.php" >Ajouter un projet</a></li>
+            <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
+            <?php } ?>
+            <?php }else { ?>
+            <li><a class="dropdown-item" href="connection.php" >Connection</a></li>
+            <li><a class="dropdown-item" href="inscription.php" >Inscription</a></li>
+            
+            <?php } ?>
+
+          </ul>
+</div> 
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="https://www.agristandard2000.fr/" target="_blank" rel="noopener noreferrer">Site Agristandard 2000</a>

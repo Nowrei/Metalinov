@@ -11,6 +11,36 @@
 </head>
 
 <body>
+  <?php
+if (isset($_SESSION['entreprise_entreprise'])) {
+  ?>
+<div class="row">
+      <div class="col-lg-12">
+        <div id="showAlert"></div>
+      </div>
+    </div>
+  <!-- Add New User Modal Start -->
+  <div class="" tabindex="-1" id="addNewUserModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+          <form id="add-user-form" class="p-2" novalidate>
+            <div class="row mb-3 gx-3">
+              
+
+            <div class="mb-3">
+                Vous êtes bien inscrit, <a href=../index.php>Retour à l'accueil.</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add New User Modal End -->
+  <?php }else{
+    ?>
 <div class="row">
       <div class="col-lg-12">
         <div id="showAlert"></div>
@@ -51,8 +81,7 @@
       </div>
     </div>
   </div>
-  <!-- Add New User Modal End -->
-
+  <?php } ?>
 
     
   <script src="../assets/js/connection.js"></script>
