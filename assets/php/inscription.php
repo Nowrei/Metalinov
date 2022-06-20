@@ -7,6 +7,7 @@ $util = new Util;
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $entreprise = $_POST['entreprise'];
+$tel = $_POST['phone'];
 $mail = $_POST['mail'];
 $password = $_POST['mdp'];
 $password1 = $_POST['mdp1'];
@@ -34,17 +35,19 @@ if ($password == $password1){
 
     if ($testmail == 0) {
 
-    $sql = "INSERT INTO entreprise (nom_entreprise, prenom_entreprise, entreprise_entreprise, mail_entreprise, mdp_entreprise) VALUES (:nom_entreprise, :prenom_entreprise, :entreprise_entreprise, :mail_entreprise, :mdp_entreprise)";
+    $sql = "INSERT INTO entreprise (nom_entreprise, prenom_entreprise, entreprise_entreprise, telephone_entreprise, mail_entreprise, mdp_entreprise) 
+    VALUES (:nom_entreprise, :prenom_entreprise, :entreprise_entreprise, :telephone_entreprise, :mail_entreprise, :mdp_entreprise)";
     $requete= $bdd->prepare($sql);
     $requete->execute(array(
         ":nom_entreprise" => $nom,
         ":prenom_entreprise" => $prenom,
         ":entreprise_entreprise" => $entreprise,
+        ":telephone_entreprise" => $tel,
         ':mail_entreprise' => $mail,
         'mdp_entreprise' => $password
    
     )); 
-    header ("location: ../../index.php?message=succes");
+    header ("location: connection.php");
 
     }else{ echo $util->showMessage('danger', 'Vous êtes déjà inscrit');}
 }else{

@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -53,6 +55,6 @@
 
 
     
-  <script src="assets/js/connection.js"></script>
+  <script src="../assets/js/connection.js"></script>
 </body>
 </html>

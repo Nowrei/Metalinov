@@ -26,12 +26,12 @@ if ( $count == 1) {
                     $_SESSION['id_entreprise'] = $resultat['id_entreprise'];
                     $_SESSION['entreprise_entreprise'] = $resultat['entreprise_entreprise'];
                     
-                    header("location:../../index.php");
+                    header("location: http://localhost/Metalinov/");
 
 
 
                 }else{
-                    header("echo $util->showMessage('danger', 'Vous avez inscrit le mauvais mot de passe');");
+                   echo $util->showMessage('danger', 'Vous avez inscrit le mauvais mot de passe');
                 }
 
             }

@@ -40,6 +40,10 @@
               <input type="text" name="entreprise" class="form-control form-control-lg" placeholder="Entrer le nom de votre entreprise" required>
               <div class="invalid-feedback">Un nom d'entreprise est requis!</div>
             </div>
+            <div class="mb-3">
+              <input type="text" name="phone" class="form-control form-control-lg" placeholder="Entrer un numéro de téléphone" required>
+              <div class="invalid-feedback">Un numéro de téléphone est requis!</div>
+            </div>
 
             <div class="mb-3">
               <input type="text" name="mail" class="form-control form-control-lg" placeholder="Entrer une adresse E-mail" required>
@@ -72,6 +76,6 @@
 
 
     
-  <script src="assets/js/main.js"></script>
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

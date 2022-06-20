@@ -18,7 +18,7 @@ addForm.addEventListener("submit", async (e) => {
   } else {
     document.getElementById("add-user-btn").value = "Please Wait...";
 
-    const data = await fetch("assets/php/connection.php", {
+    const data = await fetch("../assets/php/connection.php", {
       method: "POST",
       body: formData,
     });
