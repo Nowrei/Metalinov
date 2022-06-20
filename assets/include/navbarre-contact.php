@@ -32,21 +32,21 @@
           <?php 
             if (isset($_SESSION['entreprise_entreprise'])) {
               ?>
-            <a class="dropdown-item" href="contact.php">Contact</a>
+            <a class="dropdown-item" href="contact/contact.php">Contact</a>
             <?php 
-              if(!isset($_SESSION['nom_candidat'])) { ?>
+              if(isset($_SESSION['nom_candidat'])) { ?>
             <li><a class="dropdown-item" href="projet.php" >Ajouter un projet</a></li>
             <li><a class="dropdown-item" href="crud_projet.php" >Gestion projet</a></li>
             <li><a class="dropdown-item" href="utilisateur.php" >Gestion utilisateurs</a></li>
             <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
 
             <?php }else {?>
-           
-            <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
+         
+            <li><a class="dropdown-item" href="../assets/php/deconnection.php" >Se déconnecter</a></li>
             <?php } ?>
             <?php }else { ?>
-            <li><a class="dropdown-item" href="connection.php" >Connection</a></li>
-            <li><a class="dropdown-item" href="inscription.php" >Inscription</a></li>
+            <li><a class="dropdown-item" href="contact/connection.php" >Connection</a></li>
+            <li><a class="dropdown-item" href="contact/inscription.php" >Inscription</a></li>
             
             <?php } ?>
 

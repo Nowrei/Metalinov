@@ -1,4 +1,4 @@
-<? session_start(); ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,7 +17,7 @@
 <body>
 <?php include '../assets/include/navbarre-contact.php' ?>
 <div class="alert alert-success alert-dismissible" id="success" style="display:none;">
-	  <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+	  <a href="#" class="close" data-dismiss="alert" aria-label="close"></a>
 	</div>
   <form method="post" action="../assets/php/traitement.php" id="form">
 <div class="container">
@@ -129,60 +129,6 @@
   </form>
 </div>
 <?php include '../assets/include/footer-contact.php' ?>
-<script>
-$(document).ready(function() {
-$('#butsave').on('click', function() {
-$("#butsave").attr("disabled", "disabled");
-var nom = $('#nom').val();
-var prenom = $('#prenom').val();
-var societe = $('#societe').val();
-var phone = $('#phone').val();
-var email = $('#email').val();
-var adresse = $('#adresse').val();
-var code = $('#code').val();
-var ville = $('#ville').val();
-var pays= $('#pays').val();
-var objet = $('#objet').val();
-var message = $('#message').val();
-if(societe!="" && email!="" && phone!="" && ville!=""){
-	$.ajax({
-		url: "../assets/php/traitement.php",
-		type: "POST",
-		data: {
-			nom: nom,
-      prenom: prenom,
-      societe: societe,
-      phone: phone,
-			email: email,
-			adresse: adresse,
-			ville: ville,
-      code: code,
-      pays: pays,
-      objet: objet,
-      message: message				
-		},
-		cache: false,
-		success: function(dataResult){
-			var dataResult = JSON.parse(dataResult);
-			if(dataResult.statusCode==200){
-				$("#butsave").removeAttr("disabled");
-				$('#fupForm').find('input:text').val('');
-				$("#success").show();
-				$('#success').html('Data added successfully !'); 						
-			}
-			else if(dataResult.statusCode==201){
-				alert("Error occured !");
-			}
-			
-		}
-	});
-	}
-	else{
-		alert('Please fill all the field !');
-	}
-});
-});
-</script>
 <script src="../assets/js/auto.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
