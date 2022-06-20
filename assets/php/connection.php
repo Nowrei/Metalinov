@@ -24,9 +24,13 @@ if ( $count == 1) {
                 if (password_verify($password,$resultat['mdp_entreprise'])) {
                     session_start();
                     $_SESSION['id_entreprise'] = $resultat['id_entreprise'];
+                    $_SESSION['nom_entreprise'] = $resultat['nom_entreprise'];
+                    $_SESSION['prenom_entreprise'] = $resultat['prenom_entreprise'];
+                    $_SESSION['telephone_entreprise'] = $resultat['telephone_entreprise'];
+                    $_SESSION['mail_entreprise'] = $resultat['mail_entreprise'];
                     $_SESSION['entreprise_entreprise'] = $resultat['entreprise_entreprise'];
                     
-                    echo $util->showMessage('success', 'Vous êtes bien inscrit, <a href="../../Metalinov/index.php">Retour à l'."'accueil".'</a>');
+                    echo $util->showMessage('success', 'Vous êtes bien connecté, <a href="../../Metalinov/index.php">Retour à l'."'accueil".'</a>');
 
 
 
