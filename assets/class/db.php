@@ -26,7 +26,8 @@
     // Insert User Into Database
     public function insert($nom, $prenom, $entreprise, $mail, $mdp) {
       $password = password_hash( $password, PASSWORD_DEFAULT);   
-      $sql = "INSERT INTO entreprise (nom_entreprise, prenom_entreprise, entreprise_entreprise, mail_entreprise, mdp_entreprise) VALUES (:nom_entreprise, :prenom_entreprise, :entreprise_entreprise, :mail_entreprise, :mdp_entreprise)";
+      $sql = "INSERT INTO entreprise (nom_entreprise, prenom_entreprise, entreprise_entreprise, mail_entreprise, mdp_entreprise) 
+      VALUES (:nom_entreprise, :prenom_entreprise, :entreprise_entreprise, :mail_entreprise, :mdp_entreprise)";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute([
         ':nom_entreprise' => $nom,
@@ -58,5 +59,7 @@
       return $result;
     }
 }
+
+
 
 ?>

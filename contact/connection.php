@@ -74,7 +74,7 @@ if (isset($_SESSION['entreprise_entreprise'])) {
             </div>
             <hr>
             <div class="mb-3">
-                Pas encore inscrit ? <a href=#>Inscrivez-vous.</a>
+                Pas encore inscrit ? <a href=isncription.php>Inscrivez-vous.</a>
             </div>
           </form>
         </div>

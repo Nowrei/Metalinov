@@ -47,7 +47,7 @@ if ($password == $password1){
         'mdp_entreprise' => $password
    
     )); 
-    header ("location: connection.php");
+    echo $util->showMessage('success', 'Vous êtes bien inscrit, <a href="connection.php">Connectez-vous</a> ici.');
 
     }else{ echo $util->showMessage('danger', 'Vous êtes déjà inscrit');}
 }else{

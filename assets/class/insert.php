@@ -1,35 +1,49 @@
 <?php
 
-class ville
-{
-    public function __construct()
-    {
-        $db = new DatabaseConnection;
-        $this->conn = $db->conn;
-    }
 
-    public function create($inputData)
-    {
-        $nom = $inputData['nom'];
-        $prenom = $inputData['prenom'];
-        $societe = $inputData['societe'];
-        $phone = $inputData['phone'];
-        $email = $inputData['email'];
-        $adresse = $inputData['adresse'];
-        $code = $inputData['code'];
-        $ville = $inputData['ville'];
-        $pays = $inputData['pays'];
-        $objet = $inputData['objet'];
-        $message = $inputData['message'];
-        
+  class Config {
+    protected const DBHOST = 'localhost';
+    protected const DBUSER = 'root';
+    protected const DBPASS = '';
+    protected const DBNAME = 'metalinov';
 
-        $villeQuery = "INSERT INTO contact (nom_contact,prenom_contact,societe_contact,telephone_contact,email_contact, adresse_contact,cp_contact,ville_contact,pays_contact,objet_contact,message_contact) 
-        VALUES ('$nom','$prenom','$societe','$phone','$email','$adresse','$code','$ville','$pays','$objet','$message')";
-        $result = $this->conn->query($villeQuery);
-        if($result){
-            return true;
-        }else{
-            return false;
-        }
+    protected $dsn = 'mysql:host=' . self::DBHOST . ';dbname=' . self::DBNAME . '';
+
+    protected $conn = null;
+
+    // Method for connection to the database
+    public function __construct() {
+      try {
+        $this->conn = new PDO($this->dsn, self::DBUSER, self::DBPASS);
+        $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+      } catch (PDOException $e) {
+        die('Error: ' . $e->getMessage());
+      }
     }
+  }
+
+  class Database extends Config {
+    // Insert User Into Database
+    public function insert($adresse, $cp, $ville, $pays, $objet, $message, $id) {
+     
+        $sql = "INSERT INTO commande (adresse_commande, cp_commande, ville_commande, pays_commande, objet_commande, message_commande, id_entreprise) 
+        VALUES (:adresse_commande, :cp_commande, :ville_commande, :pays_commande, :objet_commande, :message_commande, :id_entreprise)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+          ':adresse_commande' => $adresse,
+          ':cp_commande' => $cp,
+          ':ville_commande' => $ville,
+          ':pays_commande' => $pays,
+          ':objet_commande' => $objet,
+          ':message_commande' => $message,
+          ':id_entreprise' => $id
+      
+        ]);
+        return true;
+      }
+
 }
+
+
+
+?>
