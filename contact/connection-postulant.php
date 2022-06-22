@@ -12,7 +12,7 @@
 
 <body>
   <?php
-if (isset($_SESSION['entreprise_entreprise'])) {
+if (isset($_SESSION['nom_postulant'])) {
   ?>
 <div class="row">
       <div class="col-lg-12">
@@ -70,7 +70,7 @@ if (isset($_SESSION['entreprise_entreprise'])) {
             </div>
 
             <div class="mb-3">
-              <input type="submit" value="Connection" class="btn btn-primary btn-block btn-lg" id="add-user-btn">
+              <input type="submit" value="Ajouter Utilisateur" class="btn btn-primary btn-block btn-lg" id="add-user-btn">
             </div>
             <hr>
             <div class="mb-3">

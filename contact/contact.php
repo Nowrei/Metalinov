@@ -36,34 +36,34 @@
               
 
             <div class="mb-3 w-50 p-3 mx-auto my-auto">
-              <input type="text" class="form-control form-control-lg" placeholder="Entrez votre adresse" id="adresse" name="adresse" autocomplete="off" data-toggle="tooltip" data-placement="top" title="Ce champ est intelligent pour toute adresse se stiuant en france" required>
+              <input type="text" class="form-control form-control-lg" placeholder="Adresse" id="adresse" name="adresse" autocomplete="off" data-toggle="tooltip" data-placement="top" title="Ce champ est intelligent pour toute adresse se stiuant en france" required>
         <div class="address-feedback position-absolute list-group" style="z-index:1100;">
         </div>
               <div class="invalid-feedback">Une adresse est requise</div>
             </div>
 
             <div class="mb-3 w-50 p-3 mx-auto my-auto">
-              <input type="text" name="cp" id="cp" class="form-control form-control-lg" placeholder="Entrer votre code postal" required>
+              <input type="text" name="cp" id="cp" class="form-control form-control-lg" placeholder="Code postal" required>
               <div class="invalid-feedback">Un code postal est requis</div>
             </div>
 
             <div class="mb-3 w-50 p-3 mx-auto my-auto">
-              <input type="text" name="ville" id="ville" class="form-control form-control-lg" placeholder="Entrer le nom de votre ville" required>
+              <input type="text" name="ville" id="ville" class="form-control form-control-lg" placeholder="Ville" required>
               <div class="invalid-feedback">Une ville est requis</div>
             </div>
 
             <div class="mb-3 w-50 p-3 mx-auto my-auto">
-              <input type="text" class="form-control form-control-lg" name="pays" placeholder="Entrer votre pays" required>
+              <input type="text" class="form-control form-control-lg" name="pays" placeholder="Pays" required>
               <div class="invalid-feedback">Une ville est requis</div>
             </div>
             
             <div class="mb-3 w-50 p-3  ">
-              <input type="text" name="objet" class="form-control form-control-lg" placeholder="Objet du message" required>
+              <input type="text" name="objet" class="form-control form-control-lg" placeholder="Objet" required>
               <div class="invalid-feedback">Veuillez inscrire l'objet de votre message</div>
             </div>
 
-            <div class="mb-3">
-              <textarea type="text" class="form-control form-control-lg" placeholde="Laissez votre message ici" name="message" style="height : 100px" required></textarea>
+            <div class="mb-3 ">
+              <textarea type="text" class="form-control form-control-lg" placeholder="Message" name="message" style="height : 100px" required></textarea>
               <div class="invalid-feedback">Un message est requis!</div>
             </div>
             

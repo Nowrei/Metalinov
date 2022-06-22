@@ -36,11 +36,7 @@
                 <div class="invalid-feedback">Un prenom est requis!</div>
               </div>
             </div>
-
-            <div class="mb-3">
-              <input type="text" name="entreprise" class="form-control form-control-lg" placeholder="Entrer le nom de votre entreprise" required>
-              <div class="invalid-feedback">Un nom d'entreprise est requis!</div>
-            </div>
+            
             <div class="mb-3">
               <input type="text" name="phone" class="form-control form-control-lg" placeholder="Entrer un numéro de téléphone" required>
               <div class="invalid-feedback">Un numéro de téléphone est requis!</div>
@@ -62,7 +58,7 @@
 
 
             <div class="mb-3">
-              <input type="submit" value="S'inscrire" class="btn btn-primary btn-block btn-lg" id="add-user-btn">
+              <input type="submit" value="Ajouter Utilisateur" class="btn btn-primary btn-block btn-lg" id="add-user-btn">
             </div>
             <hr>
             <div class="mb-3">
