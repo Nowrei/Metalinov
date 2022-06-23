@@ -12,7 +12,7 @@
 
 <body>
   <?php
-if (isset($_SESSION['nom_postulant'])) {
+if (isset($_SESSION['id_postulant'])) {
   ?>
 <div class="row">
       <div class="col-lg-12">
@@ -31,7 +31,7 @@ if (isset($_SESSION['nom_postulant'])) {
               
 
             <div class="mb-3">
-                Vous êtes bien inscrit, <a href=../index.php>Retour à l'accueil.</a>
+                Vous êtes déjà connecter, <a href=../index.php>Retour à l'accueil.</a>
             </div>
           </form>
         </div>
@@ -74,7 +74,7 @@ if (isset($_SESSION['nom_postulant'])) {
             </div>
             <hr>
             <div class="mb-3">
-                Pas encore inscrit ? <a href=isncription.php>Inscrivez-vous.</a>
+                Pas encore inscrit ? <a href=isncription-postulant.php>Inscrivez-vous.</a>
             </div>
           </form>
         </div>

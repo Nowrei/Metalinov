@@ -31,23 +31,18 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
           <?php 
-            if ($_SESSION['role_utilisateur'] =='0') {
+            if (!isset ($_SESSION['id_entreprise'] )) {
               ?>
+              <li><a class="dropdown-item" href="contact/contact.php" >Contact</a></li>
+            <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
+            <?php } ?>
         
             <?php 
-              if($_SESSION['role_utilisateur'] != '0') { ?>
+              if(!isset ($_SESSION['id_postulant'])) { ?>
             <li><a class="dropdown-item" href="candidature.php" >Candidature</a></li>
             <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
 
-            <?php }else {?>
-            <li><a class="dropdown-item" href="contact.php" >Contact</a></li>
-            <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
             <?php } ?>
-            <?php }else { ?>
-            <li><a class="dropdown-item" href="contact/inscription.php" >Espace Entreprise</a></li>
-            <li><a class="dropdown-item" href="contact/inscription-postulant.php" >Espace Candidature</a></li>
-            <?php } ?>
-
           </ul>
 </div> 
               </li>

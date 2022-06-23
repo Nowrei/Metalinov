@@ -1,6 +1,8 @@
 <?php 
 session_start();
-if(!isset($_SESSION['role_utilisateur'])) {
+if(isset($_SESSION['role_utilisateur'])) { 
+  header("location:accueil.php");
+}
 
 ?>
 <!DOCTYPE html>
@@ -209,6 +211,3 @@ if(!isset($_SESSION['role_utilisateur'])) {
   <script src="assets/js/back.js"></script>
 </body>
 </html>
-<?php } else {
-  header('location:acceuil.php');
-}?>

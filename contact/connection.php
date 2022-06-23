@@ -12,7 +12,7 @@
 
 <body>
   <?php
-if (isset($_SESSION['entreprise_entreprise'])) {
+if (isset($_SESSION['id_entreprise'])) {
   ?>
 <div class="row">
       <div class="col-lg-12">
@@ -31,7 +31,7 @@ if (isset($_SESSION['entreprise_entreprise'])) {
               
 
             <div class="mb-3">
-                Vous êtes bien inscrit, <a href=../index.php>Retour à l'accueil.</a>
+                Vous êtes déjà connecter, <a href=../index.php>Retour à l'accueil.</a>
             </div>
           </form>
         </div>
