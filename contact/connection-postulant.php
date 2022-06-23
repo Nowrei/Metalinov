@@ -60,8 +60,8 @@ if (isset($_SESSION['nom_postulant'])) {
               
 
             <div class="mb-3">
-              <input type="text" name="identifiant" class="form-control form-control-lg" placeholder="Entrer votre entreprise/ adresse e-mail" required>
-              <div class="invalid-feedback">Un nom d'entreprise est requis!</div>
+              <input type="text" name="identifiant" class="form-control form-control-lg" placeholder="Entrer votre adresse e-mail" required>
+              <div class="invalid-feedback">Entrer votre adresse e-mail</div>
             </div>
 
             <div class="mb-3">
@@ -70,7 +70,7 @@ if (isset($_SESSION['nom_postulant'])) {
             </div>
 
             <div class="mb-3">
-              <input type="submit" value="Ajouter Utilisateur" class="btn btn-primary btn-block btn-lg" id="add-user-btn">
+              <input type="submit" value="Connection" class="btn btn-primary btn-block btn-lg" id="add-user-btn">
             </div>
             <hr>
             <div class="mb-3">

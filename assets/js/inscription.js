@@ -20,7 +20,7 @@ addForm.addEventListener("submit", async (e) => {
   } else {
     document.getElementById("add-user-btn").value = "Please Wait...";
 
-    const data = await fetch("../assets/php/inscription.php", {
+    const data = await fetch("../assets/php/inscri-postulant.php", {
       method: "POST",
       body: formData,
     });
@@ -49,7 +49,7 @@ connectionForm.addEventListener("submit", async (e) => {
     } else {
       document.getElementById("add-user-btn").value = "Please Wait...";
   
-      const data = await fetch("../assets/php/inscription.php", {
+      const data = await fetch("../assets/php/inscri-postulant.php", {
         method: "POST",
         body: formData,
       });

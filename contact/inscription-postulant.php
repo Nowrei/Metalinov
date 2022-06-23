@@ -62,7 +62,7 @@
             </div>
             <hr>
             <div class="mb-3">
-                Déjà inscris ? <a href="connection.php">Connectez-vous</a>
+                Déjà inscris ? <a href="connection-postulant.php">Connectez-vous</a>
             </div>
           </form>
         </div>
@@ -73,6 +73,6 @@
 
 
     
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/inscription.js"></script>
 </body>
 </html>
