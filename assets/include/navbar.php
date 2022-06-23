@@ -30,7 +30,7 @@
             Profil
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="contact/connection.php" >Espace Entreprise</a></li>
+            <li><a class="dropdown-item" href="contact/inscription.php" >Espace Entreprise</a></li>
             <li><a class="dropdown-item" href="contact/inscription-postulant.php" >Espace Candidature</a></li>
           </ul>
 </div> 
