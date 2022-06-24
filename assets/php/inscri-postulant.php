@@ -15,7 +15,13 @@ $password1 = $_POST['mdp1'];
 
 if ($password == $password1){
 
-    if (preg_match("#.*^(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$#", $password )) {
+    if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+
+        if (preg_match("#.*^(?=.{8,20}).*$#", $password )) {
+    
+                if (preg_match("#.*^(?=.*[a-z])(?=.*[A-Z]).*$#", $password )) {
+    
+                    if (preg_match("#.*^(?=.*[0-9]).*$#", $password )) {
 
 
     $password = password_hash( $password, PASSWORD_DEFAULT);    
@@ -53,7 +59,13 @@ if ($password == $password1){
 
     }else{ echo $util->showMessage('danger', 'Vous êtes déjà inscrit');}
 
-  }else{ echo $util->showMessage('danger', 'Le mot de passe doit au moins contenir entre 8 et 20 charactère, ainsi qu'."'une".' majuscule et un chiffre');}
+}else{ echo $util->showMessage('danger', 'Le mot de passe doit contenir au moins un chiffre');}
+
+}else{ echo $util->showMessage('danger', 'Le mot de passe doit contenir au moins une lettre en majuscule');}
+
+}else{ echo $util->showMessage('danger', 'Le mot de passe doit contenir entre 8 et 20 caractères');}
+
+}else{ echo $util->showMessage('danger', 'L'."'email n'est pas ".'valide');}  
 
 }else{
 
