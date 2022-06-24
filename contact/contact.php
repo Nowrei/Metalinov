@@ -22,7 +22,7 @@ if (!isset($_SESSION['id_entreprise'])) {
 </head>
 
 <body>
-<?php include '../assets/include/navbarre-info.php' ?>
+<?php include '../assets/include/navbarre-contact.php' ?>
 <div class="row">
       <div class="col-lg-12">
         <div id="showAlert"></div>

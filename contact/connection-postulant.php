@@ -60,7 +60,7 @@ if (isset($_SESSION['id_postulant'])) {
               
 
             <div class="mb-3">
-              <input type="text" name="identifiant" class="form-control form-control-lg" placeholder="Entrer votre adresse e-mail" required>
+              <input type="email" name="mail" class="form-control form-control-lg" placeholder="Entrer votre adresse e-mail" required>
               <div class="invalid-feedback">Adresse e-mail requise</div>
             </div>
 
@@ -84,6 +84,6 @@ if (isset($_SESSION['id_postulant'])) {
   <?php } ?>
 
     
-  <script src="../assets/js/connection.js"></script>
+  <script src="../assets/js/co-postulant.js"></script>
 </body>
 </html>

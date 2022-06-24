@@ -4,14 +4,14 @@ include '../class/util.php';
 
 $util = new Util;
 
-$identifiant = $_POST['identifiant'];
+$mail = $_POST['mail'];
 $password = $_POST['mdp'];
 
 $sql = "SELECT * FROM postulant WHERE mail_postulant = :mail_postulant";
 $requete= $bdd->prepare($sql);
 $requete->execute(array(
 
-    ':mail_postulant' =>$identifiant
+    ':mail_postulant' =>$mail
    
 ));
 
@@ -28,7 +28,7 @@ if ( $count == 1) {
                     $_SESSION['prenom_postulant'] = $resultat['prenom_postulant'];
                     $_SESSION['role_utilisateur'] = $resultat['role_utilisateur'];
 
-                    var_dump($_SESSION['nom_postulant']);
+                 
                     echo $util->showMessage('success', 'Vous êtes bien connecté, <a href="../../Metalinov/">Retour à l'."'accueil".'</a>');
 
 
