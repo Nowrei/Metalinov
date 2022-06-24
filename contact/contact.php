@@ -1,5 +1,5 @@
 <?php session_start(); 
-if (!isset($_SESSION['id_entreprise']4)) {
+if (!isset($_SESSION['id_entreprise'])) {
   header('location:../accueil.php');
 }
   

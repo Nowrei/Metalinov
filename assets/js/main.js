@@ -26,7 +26,7 @@ addForm.addEventListener("submit", async (e) => {
     });
     const response = await data.text();
     showAlert.innerHTML = response;
-    document.getElementById("add-user-btn").value = "Add User";
+    document.getElementById("add-user-btn").value = "S'inscrire";
     addForm.reset();
     addForm.classList.remove("was-validated");
     addModal.hide();
@@ -34,33 +34,6 @@ addForm.addEventListener("submit", async (e) => {
   }
 });
 
-// Connection Ajax Request
-connectionForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-  
-    const formData = new FormData(connectionForm);
-    formData.append("add", 1);
-  
-    if (connectionForm.checkValidity() === false) {
-      e.preventDefault();
-      e.stopPropagation();
-      connectionForm.classList.add("was-validated");
-      return false;
-    } else {
-      document.getElementById("add-user-btn").value = "Please Wait...";
-  
-      const data = await fetch("../assets/php/inscription.php", {
-        method: "POST",
-        body: formData,
-      });
-      const response = await data.text();
-      showAlert.innerHTML = response;
-      document.getElementById("add-user-btn").value = "Add User";
-      connectionForm.reset();
-      connectionForm.classList.remove("was-validated");
-      addModal.hide();
-      fetchAllUsers();
-    }
-  });
+
 
 

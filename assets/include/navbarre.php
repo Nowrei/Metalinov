@@ -31,14 +31,14 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
           <?php 
-            if (!isset ($_SESSION['id_entreprise'] )) {
+            if ($_SESSION['role_utilisateur'] == '0' ) {
               ?>
               <li><a class="dropdown-item" href="contact/contact.php" >Contact</a></li>
             <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
             <?php } ?>
         
             <?php 
-              if(!isset ($_SESSION['id_postulant'])) { ?>
+              if($_SESSION['role_utilisateur'] =='1' ) { ?>
             <li><a class="dropdown-item" href="candidature.php" >Candidature</a></li>
             <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
 

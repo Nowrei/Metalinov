@@ -26,7 +26,7 @@ addForm.addEventListener("submit", async (e) => {
     });
     const response = await data.text();
     showAlert.innerHTML = response;
-    document.getElementById("add-user-btn").value = "Add User";
+    document.getElementById("add-user-btn").value = "Inscription";
     addForm.reset();
     addForm.classList.remove("was-validated");
     addModal.hide();
@@ -55,7 +55,7 @@ connectionForm.addEventListener("submit", async (e) => {
       });
       const response = await data.text();
       showAlert.innerHTML = response;
-      document.getElementById("add-user-btn").value = "Add User";
+      document.getElementById("add-user-btn").value = "S'inscrire";
       connectionForm.reset();
       connectionForm.classList.remove("was-validated");
       addModal.hide();

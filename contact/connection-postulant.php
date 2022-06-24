@@ -74,7 +74,7 @@ if (isset($_SESSION['id_postulant'])) {
             </div>
             <hr>
             <div class="mb-3">
-                Pas encore inscrit ? <a href=isncription-postulant.php>Inscrivez-vous.</a>
+                Pas encore inscrit ? <a href=inscription-postulant.php>Inscrivez-vous.</a>
             </div>
           </form>
         </div>
