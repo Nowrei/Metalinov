@@ -11,13 +11,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https:////cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="../assets/styles/contact.css">
-    <link rel="stylesheet" href="../assets/styles/footer.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-<?php include '../assets/include/navbarre-info.php' ?>
+
 <div class="row">
       <div class="col-lg-12">
         <div id="showAlert"></div>
@@ -58,13 +57,18 @@
             </div>
             
             <div class="mb-3 w-50 p-3  ">
-              <input type="text" name="objet" class="form-control form-control-lg" placeholder="Objet" required>
-              <div class="invalid-feedback">Veuillez inscrire l'objet de votre message</div>
+              <input type="text" name="poste" class="form-control form-control-lg" placeholder="Poste souhaité" required>
+              <div class="invalid-feedback">Veuillez inscrire le poste souhaité</div>
             </div>
 
             <div class="mb-3 ">
               <textarea type="text" class="form-control form-control-lg" placeholder="Message" name="message" style="height : 100px" required></textarea>
               <div class="invalid-feedback">Un message est requis!</div>
+            </div>
+
+            <div class="mb-3 ">
+            <input type="file" name="file">
+            <div class="invalid-feedback">Inséré votre cv</div>
             </div>
             
 
@@ -77,9 +81,9 @@
       </div>
     </div>
   </div>
-  <?php include '../assets/include/footer-info.php' ?>
-<script src="../assets/js/auto.js"></script>
-<script src="../assets/js/contact.js"></script>
+
+<script src="assets/js/auto.js"></script>
+<script src="assets/js/candidature.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>

@@ -14,6 +14,10 @@ $password1 = $_POST['mdp1'];
 
 
 if ($password == $password1){
+
+    if (preg_match("#.*^(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$#", $password )) {
+
+
     $password = password_hash( $password, PASSWORD_DEFAULT);    
 
     $sql="SELECT * FROM postulant WHERE mail_postulant = :mail_postulant";
@@ -48,6 +52,9 @@ if ($password == $password1){
     echo $util->showMessage('success', 'Vous êtes bien inscrit, <a href="connection-postulant.php">Connectez-vous</a> ici.');
 
     }else{ echo $util->showMessage('danger', 'Vous êtes déjà inscrit');}
+
+  }else{ echo $util->showMessage('danger', 'Le mot de passe doit au moins contenir entre 8 et 20 charactère, ainsi qu'."'une".' majuscule et un chiffre');}
+
 }else{
 
  echo $util->showMessage('danger', 'Les mots de passe ne sont pas identique');
