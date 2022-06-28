@@ -20,7 +20,7 @@ addForm.addEventListener("submit", async (e) => {
   } else {
     document.getElementById("ajouter-candidature").value = "Please Wait...";
 
-    const data = await fetch("../assets/php/test.php", {
+    const data = await fetch("../assets/php/candidature.php", {
       method: "POST",
       body: formData,
     });
