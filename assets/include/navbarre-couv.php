@@ -30,24 +30,17 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
           <?php 
-            if (isset($_SESSION['entreprise_entreprise'])) {
+            if ($_SESSION['role_utilisateur'] == '0' ) {
               ?>
-            <a class="dropdown-item" href="../../contact/contact.php">Contact</a>
-            <?php 
-              if(isset($_SESSION['nom_candidat'])) { ?>
-            <li><a class="dropdown-item" href="projet.php" >Ajouter un projet</a></li>
-            <li><a class="dropdown-item" href="crud_projet.php" >Gestion projet</a></li>
-            <li><a class="dropdown-item" href="utilisateur.php" >Gestion utilisateurs</a></li>
-            <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
-
-            <?php }else {?>
-            
-            <li><a class="dropdown-item" href="../../assets/php/deconnection.php" >Se déconnecter</a></li>
+              <li><a class="dropdown-item" href="../contact/contact.php" >Contact</a></li>
+            <li><a class="dropdown-item" href="../assets/php/deconnection.php" >Se déconnecter</a></li>
             <?php } ?>
-            <?php }else { ?>
-            <li><a class="dropdown-item" href="connection.php" >Connection</a></li>
-            <li><a class="dropdown-item" href="inscription.php" >Inscription</a></li>
-            
+        
+            <?php 
+              if($_SESSION['role_utilisateur'] =='1' ) { ?>
+            <li><a class="dropdown-item" href="../contact/candidature.php" >Candidature</a></li>
+            <li><a class="dropdown-item" href="../assets/php/deconnection.php" >Se déconnecter</a></li>
+
             <?php } ?>
 
           </ul>

@@ -57,10 +57,10 @@ if(isset($_SESSION['role_utilisateur'])) {
           <img src="assets/img/1.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div2">
-        <img src="assets/img/2.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/front3.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div3">
-        <img src="assets/img/3.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/front4.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div4">
         <img src="assets/img/4.jpg" class="slide" height=100% width=100%>
