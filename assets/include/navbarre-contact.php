@@ -38,7 +38,7 @@
         
             <?php 
               if($_SESSION['role_utilisateur'] =='1' ) { ?>
-            <li><a class="dropdown-item" href="candidature.php" >Candidature</a></li>
+            <li><a class="dropdown-item" href="contact/candidature.php" >Candidature</a></li>
             <li><a class="dropdown-item" href="../assets/php/deconnection.php" >Se déconnecter</a></li>
 
             <?php } ?>

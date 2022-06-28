@@ -26,7 +26,7 @@ addForm.addEventListener("submit", async (e) => {
     });
     const response = await data.text();
     showAlert.innerHTML = response;
-    document.getElementById("add-user-btn").value = "Inscription";
+    document.getElementById("add-user-btn").value = "S'inscrire";
     addForm.reset();
     addForm.classList.remove("was-validated");
     addModal.hide();

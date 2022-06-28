@@ -18,15 +18,15 @@ addForm.addEventListener("submit", async (e) => {
     addForm.classList.add("was-validated");
     return false;
   } else {
-    document.getElementById("add-user-btn").value = "Please Wait...";
+    document.getElementById("ajouter-candidature").value = "Please Wait...";
 
-    const data = await fetch("assets/php/candidature.php", {
+    const data = await fetch("../assets/php/test.php", {
       method: "POST",
       body: formData,
     });
     const response = await data.text();
     showAlert.innerHTML = response;
-    document.getElementById("add-user-btn").value = "Add User";
+    document.getElementById("ajouter-candidature").value = "Envoyer";
     addForm.reset();
     addForm.classList.remove("was-validated");
     addModal.hide();
