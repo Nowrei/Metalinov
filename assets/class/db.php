@@ -24,7 +24,7 @@
 
   class Database extends Config {
     // Insert User Into Database
-    public function insert($nom, $prenom, $entreprise, $mail, $mdp) {
+    public function insert($nom, $prenom, $entreprise, $mail, $password) {
       $password = password_hash( $password, PASSWORD_DEFAULT);   
       $sql = "INSERT INTO entreprise (nom_entreprise, prenom_entreprise, entreprise_entreprise, mail_entreprise, mdp_entreprise) 
       VALUES (:nom_entreprise, :prenom_entreprise, :entreprise_entreprise, :mail_entreprise, :mdp_entreprise)";
@@ -40,9 +40,19 @@
       return true;
     }
 
+        // Fetch All Users From Database
+        public function lire() {
+          $sql = "SELECT * FROM commande WHERE id_commande = :id";
+          $stmt = $this->conn->prepare($sql);
+          $stmt->execute();
+          $result = $stmt->fetchAll();
+          return $result;
+    
+        }
+
     // Fetch All Users From Database
     public function read() {
-      $sql = "SELECT * FROM entreprise WHERE mail_entreprise = :mail_entreprise";
+      $sql = "SELECT * FROM commande";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute();
       $result = $stmt->fetchAll();

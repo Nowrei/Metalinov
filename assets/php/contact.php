@@ -9,6 +9,9 @@
   // Handle Add New User Ajax Request
   if (isset($_POST['add'])) {
 
+    $entreprise = $util->testInput(htmlspecialchars($_SESSION['entreprise_commande']));
+    $phone = $util->testInput(htmlspecialchars($_SESSION['telephone_commande']));
+    $mail = $util->testInput(htmlspecialchars($_SESSION['mail_commande']));
     $adresse = $util->testInput($_POST['adresse']);
     $cp = $util->testInput($_POST['cp']);
     $ville = $util->testInput($_POST['ville']);
@@ -19,7 +22,7 @@
     
 
 
-    if ($db->insert($adresse, $cp, $ville, $pays, $objet, $message, $id)) {
+    if ($db->insert($entreprise, $phone, $mail, $adresse, $cp, $ville, $pays, $objet, $message, $id)) {
       echo $util->showMessage('success', 'Commande bien prit en compte, nous vous recontacterons dans les plus bref délais');
     } else {
       echo $util->showMessage('danger', 'Quelque chose ne fonctionne pas, essayer à nouveau');

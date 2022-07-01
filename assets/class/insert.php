@@ -24,12 +24,15 @@
 
   class Database extends Config {
     // Insert User Into Database
-    public function insert($adresse, $cp, $ville, $pays, $objet, $message, $id) {
+    public function insert($entreprise, $phone, $mail, $adresse, $cp, $ville, $pays, $objet, $message, $id) {
      
-        $sql = "INSERT INTO commande (adresse_commande, cp_commande, ville_commande, pays_commande, objet_commande, message_commande, id_entreprise) 
-        VALUES (:adresse_commande, :cp_commande, :ville_commande, :pays_commande, :objet_commande, :message_commande, :id_entreprise)";
+        $sql = "INSERT INTO commande (entreprise_commande, telephone_commande, mail_commande, adresse_commande, cp_commande, ville_commande, pays_commande, objet_commande, message_commande, id_entreprise) 
+        VALUES (:entreprise_commande, :telephone_commande, :mail_commande, :adresse_commande, :cp_commande, :ville_commande, :pays_commande, :objet_commande, :message_commande, :id_entreprise)";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([
+          ':entreprise_commande' => $entreprise,
+          ':telephone_commande' => $phone,
+          ':mail_commande' => $mail,
           ':adresse_commande' => $adresse,
           ':cp_commande' => $cp,
           ':ville_commande' => $ville,
