@@ -2,8 +2,10 @@
 session_start();
 include "config.php";
 include '../class/util.php';
+include '../class/insert.php';
 
 $util = new Util;
+$db = new Database;
 
 $adresse = $util->testInput($_POST['adresse']);
 $cp = $util->testInput($_POST['cp']);
@@ -29,25 +31,8 @@ if(!empty($_FILES["file"]["name"])){
             
             
                             // Insert image file name into database
-
-            $sql = "INSERT INTO candidature (adresse_candidature, cp_candidature, ville_candidature, poste_candidature, message_candidature, cv_candidature, id_postulant) 
-            VALUES (:adresse_candidature, :cp_candidature, :ville_candidature, :poste_candidature, :message_candidature, :cv_candidature, :id_postulant)";
-            $requete= $bdd->prepare($sql);
-            $requete->execute(array(
-        ":adresse_candidature" => $adresse,
-        ":cp_candidature" => $cp,
-        ":ville_candidature" => $ville,
-        ':poste_candidature' => $poste,
-        ':message_candidature' => $message,
-        ':cv_candidature' => $fileName,
-        ':id_postulant' => $id
-   
-    )); 
-
-
-
-            
-                echo $util->showMessage('success', 'Votre candidature est bien envoyée');
+                      if ($db->candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id)) {           
+                echo $util->showMessage('success', 'Votre candidature est bien envoyée');}
             } 
         }else{
             echo $util->showMessage('danger', 'Seul les JPG, JPEG, PNG et PDF sont acceptés');

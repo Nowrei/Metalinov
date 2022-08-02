@@ -23,7 +23,7 @@
   }
 
   class Database extends Config {
-    // Insert User Into Database
+    // Insertion commande entreprise
     public function insert($entreprise, $phone, $mail, $adresse, $cp, $ville, $pays, $objet, $message, $id) {
      
         $sql = "INSERT INTO commande (entreprise_commande, telephone_commande, mail_commande, adresse_commande, cp_commande, ville_commande, pays_commande, objet_commande, message_commande, id_entreprise) 
@@ -45,8 +45,32 @@
         return true;
       }
 
+
+
+
+  public function candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id) {
+  //Insertion candidature
+
+
+  $sql = "INSERT INTO candidature (adresse_candidature, cp_candidature, ville_candidature, poste_candidature, message_candidature, cv_candidature, id_postulant) 
+  VALUES (:adresse_candidature, :cp_candidature, :ville_candidature, :poste_candidature, :message_candidature, cv_candidature :id_postulant)";
+  $stmt = $this->conn->prepare($sql);
+  $stmt->execute([
+
+    ':adresse_candidature' => $adresse,
+    ':cp_candidature' => $cp,
+    ':ville_candidature' => $ville,
+    ':poste_candidature' => $poste,
+    ':message_candidature' => $message,
+    ':cv_candidature' => $fileName,
+    ':id_postulant' => $id
+
+  ]);
+  return true;
+  
+
+  }
+  
 }
-
-
 
 ?>
