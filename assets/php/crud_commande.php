@@ -13,14 +13,6 @@
     $password = $util->testInput($_POST['mdp']);
     $role = $util->testInput($_POST['role']);
     
-
-    if ($db->insert($pseudo, $mail, $password, $role)) {
-      echo $util->showMessage('success', 'User inserted successfully!');
-    } else {
-      echo $util->showMessage('danger', 'Something went wrong!');
-    }
-  }
-
   // Handle Fetch All Users Ajax Request
   if (isset($_GET['read'])) {
     $users = $db->read();
@@ -52,39 +44,7 @@
     }
   }
  
-
-  // Handle Edit User Ajax Request
-  if (isset($_GET['edit'])) {
-    $id = $_GET['id'];
-
-    $user = $db->readOne($id);
-    echo json_encode($users);
   }
-
-  // Handle Update User Ajax Request
-  if (isset($_POST['update'])) {
-    $id = $util->testInput($_POST['id']);
-    $pseudo = $util->testInput($_POST['pseudo']);
-    $mail = $util->testInput($_POST['mail']);
-    $password = $util->testInput($_POST['mdp']);
-    $role = $util->testInput($_POST['role']);
-
-
-    if ($db->update($id, $pseudo, $mail, $password, $role)) {
-      echo $util->showMessage('success', 'User updated successfully!');
-    } else {
-      echo $util->showMessage('danger', 'Something went wrong!');
-    }
-  }
-
-  // Handle Delete User Ajax Request
-  if (isset($_GET['delete'])) {
-    $id = $_GET['id'];
-    if ($db->delete($id)) {
-      echo $util->showMessage('info', 'User deleted successfully!');
-    } else {
-      echo $util->showMessage('danger', 'Something went wrong!');
-    }
-  }
+ 
 
 ?>

@@ -1,8 +1,10 @@
 <?php
 include "config.php";
 include '../class/util.php';
+include '../class/insert.php';
 
 $util = new Util;
+$db = new Database;
 
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
@@ -44,18 +46,9 @@ if ($password == $password1){
 
     if ($testmail == 0) {
 
-    $sql = "INSERT INTO postulant (nom_postulant, prenom_postulant, telephone_postulant, mail_postulant, mdp_postulant, role_utilisateur) 
-    VALUES (:nom_postulant, :prenom_postulant, :telephone_postulant, :mail_postulant, :mdp_postulant, '1')";
-    $requete= $bdd->prepare($sql);
-    $requete->execute(array(
-        ":nom_postulant" => $nom,
-        ":prenom_postulant" => $prenom,
-        ":telephone_postulant" => $tel,
-        ':mail_postulant' => $mail,
-        ':mdp_postulant' => $password
-   
-    )); 
-    echo $util->showMessage('success', 'Vous êtes bien inscrit, <a href="connection-postulant.php">Connectez-vous</a> ici.');
+        if ($db->postulant($nom, $prenom, $tel, $mail, $password)); {
+
+            echo $util->showMessage('success', 'Vous êtes bien inscrit, <a href="connection-postulant.php">Connectez-vous</a> ici.');}
 
     }else{ echo $util->showMessage('danger', 'Vous êtes déjà inscrit');}
 

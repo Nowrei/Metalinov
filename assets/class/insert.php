@@ -45,7 +45,26 @@
         return true;
       }
 
-
+      public function postulant($nom, $prenom, $tel, $mail, $password) {
+        //Insertion postulant
+      
+      
+        $sql = "INSERT INTO postulant (nom_postulant, prenom_postulant, telephone_postulant, mail_postulant, mdp_postulant, role_utilisateur) 
+        VALUES (:nom_postulant, :prenom_postulant, :telephone_postulant, :mail_postulant, :mdp_postulant, '1')";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+      
+          ":nom_postulant" => $nom,
+        ":prenom_postulant" => $prenom,
+        ":telephone_postulant" => $tel,
+        ':mail_postulant' => $mail,
+        ':mdp_postulant' => $password
+      
+        ]);
+        return true;
+        
+      
+        }
 
 
   public function candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id) {
