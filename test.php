@@ -42,13 +42,14 @@
           <table class="table table-striped table-bordered text-center">
             <thead>
               <tr>
-                <th>Entreprise</th>
+                <th>Nom</th>
+                <th>Prenom</th>
                 <th>Telephone</th>
-                <th>Email</th>
+                <th>Mail</th>
                 <th>Adresse</th>
                 <th>Code postal</th>
                 <th>Ville</th>
-                <th>Pays</th>
+                <th>Poste</th>
                 <th>Objet</th>
                 <th>Message</th>
                 <th>Action</th>

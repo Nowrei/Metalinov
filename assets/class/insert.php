@@ -23,6 +23,52 @@
   }
 
   class Database extends Config {
+
+
+
+    public function entreprise($nom, $prenom, $entreprise, $mail, $tel, $password) {
+      //Insertion postulant
+    
+    
+      $sql = "INSERT INTO entreprise (nom_entreprise, prenom_entreprise, entreprise_entreprise, telephone_entreprise, mail_entreprise, mdp_entreprise, role_utilisateur) 
+      VALUES (:nom_entreprise, :prenom_entreprise, :entreprise_entreprise, :telephone_entreprise, :mail_entreprise, :mdp_entreprise, '0')";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute([
+    
+        ":nom_entreprise" => $nom,
+        ":prenom_entreprise" => $prenom,
+        ":entreprise_entreprise" => $entreprise,
+        ":telephone_entreprise" => $tel,
+        ":mail_entreprise" => $mail,
+        "mdp_entreprise" => $password
+    
+      ]);
+      return true;
+      
+    
+      }
+
+
+    public function postulant($nom, $prenom, $tel, $mail, $password) {
+      //Insertion postulant
+    
+    
+      $sql = "INSERT INTO postulant (nom_postulant, prenom_postulant, telephone_postulant, mail_postulant, mdp_postulant, role_utilisateur) 
+      VALUES (:nom_postulant, :prenom_postulant, :telephone_postulant, :mail_postulant, :mdp_postulant, '1')";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute([
+    
+        ":nom_postulant" => $nom,
+      ":prenom_postulant" => $prenom,
+      ":telephone_postulant" => $tel,
+      ':mail_postulant' => $mail,
+      ':mdp_postulant' => $password
+    
+      ]);
+      return true;
+      
+    
+      }
     // Insertion commande entreprise
     public function insert($entreprise, $phone, $mail, $adresse, $cp, $ville, $pays, $objet, $message, $id) {
      
@@ -44,28 +90,6 @@
         ]);
         return true;
       }
-
-      public function postulant($nom, $prenom, $tel, $mail, $password) {
-        //Insertion postulant
-      
-      
-        $sql = "INSERT INTO postulant (nom_postulant, prenom_postulant, telephone_postulant, mail_postulant, mdp_postulant, role_utilisateur) 
-        VALUES (:nom_postulant, :prenom_postulant, :telephone_postulant, :mail_postulant, :mdp_postulant, '1')";
-        $stmt = $this->conn->prepare($sql);
-        $stmt->execute([
-      
-          ":nom_postulant" => $nom,
-        ":prenom_postulant" => $prenom,
-        ":telephone_postulant" => $tel,
-        ':mail_postulant' => $mail,
-        ':mdp_postulant' => $password
-      
-        ]);
-        return true;
-        
-      
-        }
-
 
   public function candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id) {
   //Insertion candidature

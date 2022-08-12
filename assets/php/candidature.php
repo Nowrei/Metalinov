@@ -31,8 +31,8 @@ if(!empty($_FILES["file"]["name"])){
             
             
                             // Insert image file name into database
-                      if ($db->candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id)) {           
-                echo $util->showMessage('success', 'Votre candidature est bien envoyée');}
+                      $db->candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id);          
+                echo $util->showMessage('success', 'Votre candidature est bien envoyée');
             } 
         }else{
             echo $util->showMessage('danger', 'Seul les JPG, JPEG, PNG et PDF sont acceptés');

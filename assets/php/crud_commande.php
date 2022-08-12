@@ -1,6 +1,6 @@
 <?php
 
-  require_once '../class/db.php';
+  require_once '../class/select.php';
   require_once '../class/util.php';
 
   $db = new Database;
@@ -20,20 +20,11 @@
     if ($users) {
       foreach ($users as $row)  {
         $output .= '<tr>
-                      <td>' . $row['entreprise_commande'] . '</td>
-                      <td>' . $row['telephone_commande'] . '</td>
-                      <td>' . $row['mail_commande'] . '</td>
-                      <td>' . $row['adresse_commande'] . '</td>
-                      <td>' . $row['cp_commande'] . '</td>
-                      <td>' . $row['ville_commande'] . '</td>
-                      <td>' . $row['pays_commande'] . '</td>
-                      <td>' . $row['objet_commande'] . '</td>
-                      <td>' . $row['message_commande'] . '</td>
-                      <td>
-                        <a href="commande.php?id_commande='. $row['id_commande'] .'" id="' . $row['id_commande'] . '" class="btn btn-primary btn-sm rounded-pill py-0 " >Voir commande</a>
+                      <td>' . $row['nom_postulant'] . '</td>
+                      <td>' . $row['prenom_postulant'] . '</td>
+                      <td>' . $row['telephone_postulant'] . '</td>
+                      <td>' . $row['mail_postulant'] . '</td>
 
-
-                      </td>
                     </tr>';
       }
       echo $output;
