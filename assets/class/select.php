@@ -1,8 +1,26 @@
 <?php
 
-require_once 'config.php';
+class Config {
+  private const DBHOST = 'localhost';
+  private const DBUSER = 'root';
+  private const DBPASS = '';
+  private const DBNAME = 'metalinov';
 
-  class Select extends Config {
+  private $dsn = 'mysql:host=' . self::DBHOST . ';dbname=' . self::DBNAME . '';
+
+  protected $conn = null;
+
+  // Method for connection to the database
+  public function __construct() {
+    try {
+      $this->conn = new PDO($this->dsn, self::DBUSER, self::DBPASS);
+      $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+      die('Error: ' . $e->getMessage());
+    }
+  }
+}
+  class Database extends Config {
 
   //Select Email entreprise
     public function entreprise($mail) {
@@ -26,7 +44,7 @@ require_once 'config.php';
       return $result;
     }
 
-/* // Fetch All Users From Database
+// Fetch All Users From Database
 public function read() {
   $sql = "SELECT * FROM postulant";
   $stmt = $this->conn->prepare($sql);
@@ -42,7 +60,7 @@ public function readOne($id) {
   $stmt->execute(['id' => $id]);
   $result = $stmt->fetch();
   return $result;
-} */
+}
 
 /* // Update Single User
 public function update($id, $pseudo, $mail, $password, $role) {

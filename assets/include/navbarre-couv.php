@@ -30,6 +30,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
           <?php 
+                   if(!isset($_SESSION['role_utilisateur'])) { ?>            
+                    <li><a class="dropdown-item" href="../../contact/inscription.php" >Espace Entreprise</a></li>
+                    <li><a class="dropdown-item" href="../../contact/inscription-postulant.php" >Espace Candidature</a></li> <?php }
+                      else {
             if ($_SESSION['role_utilisateur'] == '0' ) {
               ?>
               <li><a class="dropdown-item" href="../contact/contact.php" >Contact</a></li>
@@ -38,10 +42,11 @@
         
             <?php 
               if($_SESSION['role_utilisateur'] =='1' ) { ?>
-            <li><a class="dropdown-item" href="../contact/candidature.php" >Candidature</a></li>
-            <li><a class="dropdown-item" href="../assets/php/deconnection.php" >Se déconnecter</a></li>
+            <li><a class="dropdown-item" href="../../contact/candidature.php" >Candidature</a></li>
+            <li><a class="dropdown-item" href="../../assets/php/deconnection.php" >Se déconnecter</a></li>
 
-            <?php } ?>
+            <?php }
+            } ?>
 
           </ul>
 </div> 
