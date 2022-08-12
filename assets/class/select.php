@@ -1,27 +1,8 @@
 <?php
 
-class Config {
-    protected const DBHOST = 'localhost';
-    protected const DBUSER = 'root';
-    protected const DBPASS = '';
-    protected const DBNAME = 'metalinov';
+require_once 'config.php';
 
-    protected $dsn = 'mysql:host=' . self::DBHOST . ';dbname=' . self::DBNAME . '';
-
-    protected $conn = null;
-
-    // Method for connection to the database
-    public function __construct() {
-      try {
-        $this->conn = new PDO($this->dsn, self::DBUSER, self::DBPASS);
-        $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-      } catch (PDOException $e) {
-        die('Error: ' . $e->getMessage());
-      }
-    }
-  }
-
-  class Database extends Config {
+  class Select extends Config {
 
   //Select Email entreprise
     public function entreprise($mail) {
@@ -34,7 +15,18 @@ class Config {
         return $result;
       }
 
-// Fetch All Users From Database
+        //Select Email Postulant
+    public function postulant($mail) {
+      $sql = "SELECT * FROM postulant WHERE mail_postulant = :mail_postulant";
+      $requete = $this->conn->prepare($sql);
+      $requete->execute(array(
+          "mail_postulant" => $mail
+      ));
+      $result = $requete->fetchAll();
+      return $result;
+    }
+
+/* // Fetch All Users From Database
 public function read() {
   $sql = "SELECT * FROM postulant";
   $stmt = $this->conn->prepare($sql);
@@ -50,7 +42,7 @@ public function readOne($id) {
   $stmt->execute(['id' => $id]);
   $result = $stmt->fetch();
   return $result;
-}
+} */
 
 /* // Update Single User
 public function update($id, $pseudo, $mail, $password, $role) {
