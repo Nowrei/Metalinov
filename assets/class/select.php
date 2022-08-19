@@ -24,7 +24,7 @@ class Config {
 
   //Select Email entreprise
     public function entreprise($mail) {
-        $sql = "SELECT * FROM entreprise WHERE mail_entreprise = :mail_entreprise";
+        $sql = "SELECT * FROM commande";
         $requete = $this->conn->prepare($sql);
         $requete->execute(array(
             "mail_entreprise" => $mail
@@ -46,7 +46,7 @@ class Config {
 
 // Fetch All Users From Database
 public function read() {
-  $sql = "SELECT * FROM entreprise";
+  $sql = "SELECT * FROM commande ";
   $stmt = $this->conn->prepare($sql);
   $stmt->execute();
   $result = $stmt->fetchAll();
@@ -62,7 +62,7 @@ public function readOne($id) {
   return $result;
 }
 
-/* // Update Single User
+// Update Single User
 public function update($id, $pseudo, $mail, $password, $role) {
   
   $sql = "UPDATE utilisateur SET pseudo_utilisateur = :pseudo_utilisateur, mail_utilisateur = :mail_utilisateur, mdp_utilisateur = :mdp_utilisateur, role_utilisateur = :role_utilisateur WHERE id_utilisateur` = :id_utilisateur";
@@ -80,11 +80,11 @@ public function update($id, $pseudo, $mail, $password, $role) {
 
 // Delete User From Database
 public function delete($id) {
-  $sql = "DELETE FROM utilisateur WHERE id_utilisateur = :id_utilisateur";
+  $sql = "DELETE FROM commande WHERE id_commande = :id_commande";
   $stmt = $this->conn->prepare($sql);
-  $stmt->execute(['id_utilisateur' => $id]);
+  $stmt->execute(['id_commande' => $id]);
   return true;
-} */
+} 
 }
 
 ?>
