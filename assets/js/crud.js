@@ -15,7 +15,7 @@ const fetchAllUsers = async () => {
 fetchAllUsers();
 
 
-/* // Update User Ajax Request
+ // Update User Ajax Request
 updateForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -61,4 +61,4 @@ const deleteUser = async (id) => {
   const response = await data.text();
   showAlert.innerHTML = response;
   fetchAllUsers();
-}; */
+}; 

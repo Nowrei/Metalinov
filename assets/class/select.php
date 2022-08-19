@@ -46,7 +46,7 @@ class Config {
 
 // Fetch All Users From Database
 public function read() {
-  $sql = "SELECT * FROM postulant";
+  $sql = "SELECT * FROM entreprise";
   $stmt = $this->conn->prepare($sql);
   $stmt->execute();
   $result = $stmt->fetchAll();

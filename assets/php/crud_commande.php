@@ -24,7 +24,6 @@
                       <td>' . $row['prenom_postulant'] . '</td>
                       <td>' . $row['telephone_postulant'] . '</td>
                       <td>' . $row['mail_postulant'] . '</td>
-
                     </tr>';
       }
       echo $output;
