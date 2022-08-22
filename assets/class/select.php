@@ -55,9 +55,9 @@ public function read() {
 
 // Fetch Single User From Database
 public function readOne($id) {
-  $sql = "SELECT * FROM postulant WHERE id_postulant = :id";
+  $sql = "SELECT * FROM commande WHERE id_commande = :id_commande";
   $stmt = $this->conn->prepare($sql);
-  $stmt->execute(['id' => $id]);
+  $stmt->execute(['id_commande' => $id]);
   $result = $stmt->fetch();
   return $result;
 }

@@ -29,7 +29,7 @@ if ( $count == 1) {
                     $_SESSION['telephone_commande'] = $resultat['telephone_entreprise'];
                     $_SESSION['mail_commande'] = $resultat['mail_entreprise'];
                     
-                    echo $util->showMessage('success', 'Vous êtes bien connecté, <a href="../../Metalinov/accueil.php">Retour à l'."'accueil".'</a>');
+                    header('location:../../accueil.php');
 
 
 

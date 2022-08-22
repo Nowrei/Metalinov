@@ -23,9 +23,9 @@
                       <td>' . $row['message_commande'] . '</td>
                       <td>
                       <a href="#" id="' . $row['id_commande'] . '" class="btn btn-success btn-sm rounded-pill py-0 editLink" data-toggle="modal" data-target="#editUserModal">Edit</a>
-                      <a href="#" id="' . $row['id_commande'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink">Delete</a>
+                      <a href="#" id="' . $row['id_commande'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink" data-toggle="modal" data-target="#deleteUserModal">Delete</a>
+           
                     </td>
-          
                 
                     </tr>';
       }
@@ -55,7 +55,7 @@
   
     // Handle Delete User Ajax Request
     if (isset($_GET['delete'])) {
-      $id = $_GET['id_commande'];
+      $id = $_GET['id'];
       if ($db->delete($id)) {
         echo $util->showMessage('info', 'User deleted successfully!');
       } else {
