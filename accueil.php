@@ -41,8 +41,8 @@ if(!isset($_SESSION['role_utilisateur'])) {
             <img src="assets/img/DSC_0074.jfif" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col align-self-center">
-            <div class="mx-auto  w-75">
-              <p>Depuis 1987, d’abord sous l’enseigne « Bâtimétal », et depuis janvier 2005 sous l’enseigne « Métalinov », la société est spécialisée dans l’étude et la réalisation de bâtiments professionnels à structure métallique. Notre longue expérience, notre bureau d’études parfaitement adapté aux problèmes les plus spécifiques. Un outil informatique de pointe, des ingénieurs, des dessinateurs à votre écoute, pour étudier, concevoir et coordonner la réalisation de votre projet. Des contrôles continus et rigoureux tout au long du cycle de la réalisation vous assurent un produit fini de qualité et sans défaut.</p>  
+            <div class="mx-auto  w-75"  >
+              <p class="fs-2">Depuis 1987, d’abord sous l’enseigne « Bâtimétal », et depuis janvier 2005 sous l’enseigne « Métalinov », la société est spécialisée dans l’étude et la réalisation de bâtiments professionnels à structure métallique. Notre longue expérience, notre bureau d’études parfaitement adapté aux problèmes les plus spécifiques. Un outil informatique de pointe, des ingénieurs, des dessinateurs à votre écoute, pour étudier, concevoir et coordonner la réalisation de votre projet. Des contrôles continus et rigoureux tout au long du cycle de la réalisation vous assurent un produit fini de qualité et sans défaut. 
             </div>
           </div>
         </div>

@@ -1,18 +1,20 @@
 <?php
-include "config.php";
-include '../class/util.php';
-include '../class/insert.php';
+require_once  "config.php";
+require_once  '../class/util.php';
+require_once  '../class/insert.php';
+require_once '../class/select.php';
 
 $util = new Util;
 $db = new Database;
+$select = new Base;
 
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$entreprise = $_POST['entreprise'];
-$tel = $_POST['phone'];
-$mail = $_POST['mail'];
-$password = $_POST['mdp'];
-$password1 = $_POST['mdp1'];
+$nom = htmlspecialchars($_POST['nom']);
+$prenom = htmlspecialchars($_POST['prenom']);
+$entreprise = htmlspecialchars($_POST['entreprise']);
+$tel = htmlspecialchars($_POST['phone']);
+$mail = htmlspecialchars($_POST['mail']);
+$password = htmlspecialchars($_POST['mdp']);
+$password1 = htmlspecialchars($_POST['mdp1']);
 
 
 
@@ -29,22 +31,9 @@ if ($password == $password1){
         $password = password_hash( $password, PASSWORD_DEFAULT);    
 
 
-        $sql="SELECT * FROM entreprise WHERE mail_entreprise = :mail_entreprise";
-        $requete= $bdd->prepare($sql);
-        $requete->execute(array(
-            "mail_entreprise" => $mail
-        ));
+        $testmail = $select->entreprise($mail);
     
-        $testmail = 0;
-            while($resultat = $requete->fetch()) {
-    
-              if ($mail == $resultat['mail_entreprise']) {
-    
-                $testmail = 1 ;
-            }
-        }
-    
-    
+
         if ($testmail == 0) {
     
             if ($db->entreprise($nom, $prenom, $entreprise, $tel, $mail, $password)); {

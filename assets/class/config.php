@@ -1,12 +1,12 @@
 <?php
 
 class Config {
-    private const DBHOST = 'localhost';
-    private const DBUSER = 'root';
-    private const DBPASS = '';
-    private const DBNAME = 'metalinov';
+    public const DBHOST = 'localhost';
+    public const DBUSER = 'root';
+    public const DBPASS = '';
+    public const DBNAME = 'metalinov';
 
-    private $dsn = 'mysql:host=' . self::DBHOST . ';dbname=' . self::DBNAME . '';
+    public $dsn = 'mysql:host=' . self::DBHOST . ';dbname=' . self::DBNAME . '';
 
     protected $conn = null;
 

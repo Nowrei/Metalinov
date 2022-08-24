@@ -3,7 +3,7 @@
   require_once '../class/select.php';
   require_once '../class/util.php';
 
-  $db = new Database;
+  $db = new Base;
   $util = new Util;
 
 

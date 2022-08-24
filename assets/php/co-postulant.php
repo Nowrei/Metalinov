@@ -1,25 +1,19 @@
 <?php
 include 'config.php';
 include '../class/util.php';
+require_once '../class/select.php';
 
 $util = new Util;
+$select = new Base;
 
 $mail = $_POST['mail'];
 $password = $_POST['mdp'];
 
-$sql = "SELECT * FROM postulant WHERE mail_postulant = :mail_postulant";
-$requete= $bdd->prepare($sql);
-$requete->execute(array(
-
-    ':mail_postulant' =>$mail
-   
-));
-
-$count = $requete->rowCount();
+$count = $select->verif_entreprise($mail);
 
 if ( $count == 1) {
 
-            while($resultat = $requete->fetch()) {
+            while($count) {
 
                 if (password_verify($password,$resultat['mdp_postulant'])) {
                     session_start();

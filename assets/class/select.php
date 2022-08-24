@@ -1,37 +1,49 @@
 <?php
 
-class Config {
-  private const DBHOST = 'localhost';
-  private const DBUSER = 'root';
-  private const DBPASS = '';
-  private const DBNAME = 'metalinov';
+require_once '../class/config.php';
 
-  private $dsn = 'mysql:host=' . self::DBHOST . ';dbname=' . self::DBNAME . '';
-
-  protected $conn = null;
-
-  // Method for connection to the database
-  public function __construct() {
-    try {
-      $this->conn = new PDO($this->dsn, self::DBUSER, self::DBPASS);
-      $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    } catch (PDOException $e) {
-      die('Error: ' . $e->getMessage());
-    }
-  }
-}
-  class Database extends Config {
+  class Base extends Config {
 
   //Select Email entreprise
     public function entreprise($mail) {
-        $sql = "SELECT * FROM commande";
-        $requete = $this->conn->prepare($sql);
-        $requete->execute(array(
-            "mail_entreprise" => $mail
-        ));
-        $result = $requete->fetchAll();
-        return $result;
+      $sql="SELECT * FROM entreprise WHERE mail_entreprise = :mail_entreprise";
+      $requete= $this->conn->prepare($sql);
+      $requete->execute(array(
+          "mail_entreprise" => $mail
+      ));
+
+  
+      $testmail = 0;
+          while($resultat = $requete->fetch()) {
+  
+            if ($mail == $resultat['mail_entreprise']) {
+  
+              $testmail = 1 ;
+          }
       }
+      return $testmail;
+      
+    }
+
+    public function verif_entreprise($mail) {
+      $sql="SELECT * FROM entreprise WHERE mail_entreprise = :mail_entreprise";
+      $requete= $this->conn->prepare($sql);
+      $requete->execute(array(
+          "mail_entreprise" => $mail
+      ));
+
+  
+      $testmail = 0;
+          while($resultat = $requete->fetch()) {
+  
+            if ($mail == $resultat['mail_entreprise']) {
+  
+              $testmail = 1 ;
+          }
+      }
+      return $testmail;
+      
+    }
 
         //Select Email Postulant
     public function postulant($mail) {
@@ -39,10 +51,30 @@ class Config {
       $requete = $this->conn->prepare($sql);
       $requete->execute(array(
           "mail_postulant" => $mail
-      ));
-      $result = $requete->fetchAll();
-      return $result;
+        ));
+        $testmail = 0;
+        while($resultat = $requete->fetch()) {
+
+          if ($mail == $resultat['mail_postulant']) {
+
+            $testmail = 1 ;
+        }
     }
+    return $testmail;
+    
+  }
+
+  public function verif_postulant($mail) {
+    $sql = "SELECT * FROM postulant WHERE mail_postulant = :mail_postulant";
+    $requete = $this->conn->prepare($sql);
+    $requete->execute(array(
+        "mail_postulant" => $mail
+      ));
+      $count = $requete->rowCount();
+
+      return $count;
+  
+}
 
 // Fetch All Users From Database
 public function read() {
