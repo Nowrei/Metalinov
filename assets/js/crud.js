@@ -5,7 +5,7 @@ const tbody = document.querySelector("tbody");
 
 // Fetch All Users Ajax Request
 const fetchAllUsers = async () => {
-  const data = await fetch("assets/php/crud_commande.php?read=1", 
+  const data = await fetch("../assets/php/crud_commande.php?read=1", 
   {
     method: "GET",
   });
@@ -15,7 +15,7 @@ const fetchAllUsers = async () => {
 fetchAllUsers();
 
 
- // Update User Ajax Request
+/*  // Update User Ajax Request
 updateForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -43,7 +43,7 @@ updateForm.addEventListener("submit", async (e) => {
     editModal.hide();
     fetchAllUsers();
   }
-});
+}); */
 
 // Delete User Ajax Request
 tbody.addEventListener("click", (e) => {
@@ -55,7 +55,7 @@ tbody.addEventListener("click", (e) => {
 });
 
 const deleteUser = async (id) => {
-  const data = await fetch(`assets/php/crud_commande.php?delete=1&id=${id}`, {
+  const data = await fetch(`../assets/php/crud_commande.php?delete=1&id=${id}`, {
     method: "GET",
   });
   const response = await data.text();

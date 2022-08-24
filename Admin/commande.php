@@ -90,6 +90,6 @@
       </div>
     </div>
   </div>
-  <script src="assets/js/crud.js"></script>
+  <script src="../assets/js/crud.js"></script>
 </body>
 </html>
