@@ -1,7 +1,8 @@
 <?php
 
-  require_once '../class/select.php';
-  require_once '../class/util.php';
+require '../class/Autoloader.php';
+Autoloader::register();
+
 
   $db = new Base;
   $util = new Util;
@@ -22,7 +23,7 @@
                       <td>' . $row['objet_commande'] . '</td>
                       <td>' . $row['message_commande'] . '</td>
                       <td>
-                      <a href="accueil.php" id="' . $row['id_commande'] . '" class="btn btn-success btn-sm rounded-pill py-0 " " >Edit</a>
+                      <a href="voir.php" id="' . $row['id_commande'] . '" class="btn btn-success btn-sm rounded-pill py-0 " " >Edit</a>
                       <a href="#" id="' . $row['id_commande'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink" data-toggle="modal" data-target="#deleteUserModal">Delete</a>
            
                     </td>

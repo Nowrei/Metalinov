@@ -1,15 +1,13 @@
 <?php
 
-require_once '../class/config.php';
-
   class Base extends Config {
 
   //Select Email entreprise
-    public function entreprise($mail) {
-      $sql="SELECT * FROM entreprise WHERE mail_entreprise = :mail_entreprise";
+    public function select($mail) {
+      $sql="SELECT * FROM user WHERE mail_user = :mail_user";
       $requete= $this->conn->prepare($sql);
       $requete->execute(array(
-          "mail_entreprise" => $mail
+          "mail_user" => $mail
       ));
 
   

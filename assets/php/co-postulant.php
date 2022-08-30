@@ -1,19 +1,27 @@
 <?php
-include 'config.php';
-include '../class/util.php';
-require_once '../class/select.php';
+require_once 'config.php';
+require_once '../class/Autoloader.php';
+Autoloader::register();
 
 $util = new Util;
-$select = new Base;
 
-$mail = $_POST['mail'];
-$password = $_POST['mdp'];
 
-$count = $select->verif_entreprise($mail);
+$mail = htmlspecialchars($_POST['mail']);
+$password = htmlspecialchars($_POST['mdp']);
+
+$sql = "SELECT * FROM postulant WHERE mail_postulant = :mail_postulant";
+$requete= $bdd->prepare($sql);
+$requete->execute(array(
+
+    ':mail_postulant' =>$mail
+
+));
+
+$count = $requete->rowCount();
 
 if ( $count == 1) {
 
-            while($count) {
+            while($resultat = $requete->fetch()) {
 
                 if (password_verify($password,$resultat['mdp_postulant'])) {
                     session_start();

@@ -23,17 +23,15 @@
           <div class="collapse navbar-collapse" id="navbar-content">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-light" href="entreprise/entreprise.php">Commande</a>
+                <a class="nav-link text-light" href="candidature.php">Commande</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="entreprise/entreprise.php">Candidature</a>
+                <a class="nav-link text-light" href="#">Candidature</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="entreprise/entreprise.php">Pannel entreprise</a>
+                <a class="nav-link text-light" href="user.php">Pannel utilisateur</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="entreprise/entreprise.php">Pannel postulant</a>
-              </li>
+
 
             </ul>
           </div>
@@ -56,7 +54,7 @@
     <div class="row mt-4">
       <div class="col-lg-12 d-flex justify-content-between align-items-center">
         <div>
-          <h4 class="text-primary">Commandes</h4>
+          <h4 class="text-primary">Candidature</h4>
         </div>
         
       </div>
@@ -90,6 +88,6 @@
       </div>
     </div>
   </div>
-  <script src="../assets/js/crud.js"></script>
+  <script src="../assets/js/crud_postulant.js"></script>
 </body>
 </html>

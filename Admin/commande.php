@@ -23,17 +23,15 @@
           <div class="collapse navbar-collapse" id="navbar-content">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-light" href="entreprise/entreprise.php">Commande</a>
+                <a class="nav-link text-light" href="#">Commande</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="entreprise/entreprise.php">Candidature</a>
+                <a class="nav-link text-light" href="candidature.php">Candidature</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="entreprise/entreprise.php">Pannel entreprise</a>
+                <a class="nav-link text-light" href="user.php">Pannel utilisateur</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="entreprise/entreprise.php">Pannel postulant</a>
-              </li>
+
 
             </ul>
           </div>

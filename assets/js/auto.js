@@ -87,8 +87,8 @@ $("#adresse").keyup(function(event) {
       $.each(data.features, function(i, obj) {
         // données phase 1 (obj.properties.label) & phase 2 : name, postcode, city
         // J'ajoute chaque élément dans une liste
-        let cooladdress = obj.properties.name + " " + obj.properties.postcode + " <strong>" + obj.properties.city + "</strong>" + " " + obj.properties.context;
-        liste += '<a class="list-group-item list-group-item-action py-1" href="#" name="' + obj.properties.label + '" data-name="' + obj.properties.name + '" data-postcode="' + obj.properties.postcode + '" data-city="' + obj.properties.city + '"data-context="' + obj.properties.context +'">' + cooladdress + '</a>';
+        let cooladdress = obj.properties.name + " " + obj.properties.postcode + " <strong>" + obj.properties.city + "</strong>" ;
+        liste += '<a class="list-group-item list-group-item-action py-1" href="#" name="' + obj.properties.label + '" data-name="' + obj.properties.name + '" data-postcode="' + obj.properties.postcode + '" data-city="' + obj.properties.city  +'">' + cooladdress + '</a>';
       });
       $('.address-feedback').html(liste);
     }, 'json');

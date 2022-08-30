@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if(isset($_SESSION['role_utilisateur'])) { 
+if(isset($_SESSION['role_user'])) { 
   header("location:accueil.php");
 }
 

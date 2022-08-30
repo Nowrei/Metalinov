@@ -14,7 +14,7 @@ $poste = $util->testInput($_POST['poste']);
 $message = $util->testInput($_POST['message']);
 $id = $util->testInput(htmlspecialchars($_SESSION['id_postulant']));
 
-// File upload path
+// Chemin de l'Upload d'image
 $targetDir = "../upload/";
 $fileName = basename($_FILES["file"]["name"]);
 $targetFilePath = $targetDir . $fileName;
@@ -22,15 +22,15 @@ $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 
 
 if(!empty($_FILES["file"]["name"])){
-    // Allow certain file formats
+    // Autorise certain format d'image
     $allowTypes = array('jpg','png','jpeg','pdf');
     $fileName = uniqid('img_') . '.' . $fileType;
     if(in_array($fileType, $allowTypes)){
-        // Upload file to server
+        // Upload l'image sur le serveur
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetDir . $fileName)){
             
             
-                            // Insert image file name into database
+                            // Insert l'image et les données du formulaire en bdd
                       if($db->candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id)); {          
                 echo $util->showMessage('success', 'Votre candidature est bien envoyée');}
             } 
