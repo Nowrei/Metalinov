@@ -129,7 +129,12 @@
               <input type="password" name="mdp" class="form-control form-control-lg" placeholder="Entrer un mot de passe" required>
               <div class="invalid-feedback">Un mot de passe est requis!</div>
             </div>
+            <select class="form-select" aria-label="Default select example" name="role" id="role">
+  <option selected>Open this select menu</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
 
+</select>
             </div>
 
             <div class="mb-3">
@@ -168,7 +173,6 @@
                 <th>Prenom</th>
                 <th>Telephone</th>
                 <th>Email</th>
-                <th>Mot de passe</th>
                 <th>Role</th>
                 <th>Action</th>
               </tr>

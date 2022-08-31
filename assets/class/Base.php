@@ -14,7 +14,7 @@
       $testmail = 0;
           while($resultat = $requete->fetch()) {
   
-            if ($mail == $resultat['mail_entreprise']) {
+            if ($mail == $resultat['mail_user']) {
   
               $testmail = 1 ;
           }

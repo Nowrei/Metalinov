@@ -46,19 +46,18 @@
         return true;
       }
 
-  public function candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id) {
+  public function candidature($adresse, $cp, $ville, $message, $fileName, $id) {
     //Insertion candidature
 
 
-    $sql = "INSERT INTO candidature (adresse_candidature, cp_candidature, ville_candidature, poste_candidature, message_candidature, cv_candidature, id_user) 
-            VALUES (:adresse_candidature, :cp_candidature, :ville_candidature, :poste_candidature, :message_candidature, :cv_candidature, :id_user)";
+    $sql = "INSERT INTO candidature (adresse_candidature, cp_candidature, ville_candidature, message_candidature, cv_candidature, id_user) 
+            VALUES (:adresse_candidature, :cp_candidature, :ville_candidature, :message_candidature, :cv_candidature, :id_user)";
     $stmt = $this->conn->prepare($sql);
     $stmt->execute([
 
       ':adresse_candidature' => $adresse,
       ':cp_candidature' => $cp,
       ':ville_candidature' => $ville,
-      ':poste_candidature' => $poste,
       ':message_candidature' => $message,
       ':cv_candidature' => $fileName,
       ':id_user' => $id

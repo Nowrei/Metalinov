@@ -5,24 +5,24 @@
     // Insert User Into Database
     public function insert($nom, $prenom, $phone, $mail, $password, $role) {
       $password = password_hash( $password, PASSWORD_DEFAULT);   
-      $sql = "INSERT INTO postulant (nom_postulant, prenom_postulant, telephone_postulant, mail_postulant, mdp_postulant, role_utilisateur) 
-      VALUES (:nom_postulant, :prenom_postulant, :telephone_postulant, :mail_postulant, :mdp_postulant, :role_utilisateur)";
+      $sql = "INSERT INTO user (nom_user, prenom_user, telephone_user, mail_user, mdp_user, role_user) 
+      VALUES (:nom_user, :prenom_user, :telephone_user, :mail_user, :mdp_user, :role_user)";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute([
     
-      ":nom_postulant" => $nom,
-      ":prenom_postulant" => $prenom,
-      ":telephone_postulant" => $phone,
-      ':mail_postulant' => $mail,
-      ':mdp_postulant' => $password,
-      ':role_utilisateur' => $role
+      ":nom_user" => $nom,
+      ":prenom_user" => $prenom,
+      ":telephone_user" => $phone,
+      ':mail_user' => $mail,
+      ':mdp_user' => $password,
+      ':role_user' => $role
     
       ]);
       return true;
     }
     // Fetch All Users From Database
     public function read() {
-      $sql = "SELECT * FROM postulant";
+      $sql = "SELECT * FROM user";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute();
       $result = $stmt->fetchAll();
@@ -32,7 +32,7 @@
 
     // Fetch Single User From Database
     public function readOne($id) {
-      $sql = "SELECT * FROM postulant WHERE id_postulant = :id";
+      $sql = "SELECT * FROM user WHERE id_user = :id";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute(['id' => $id]);
       $result = $stmt->fetch();
@@ -42,16 +42,16 @@
     // Update Single User
     public function update($id, $nom, $prenom, $phone, $mail, $password, $role) {
       
-      $sql = "UPDATE postulant SET pseudo_postulant = :pseudo_postulant, mail_postulant = :mail_postulant, mdp_postulant = :mdp_postulant, role_utilisateur = :role_utilisateur WHERE id_postulant` = :id_postulant";
+      $sql = "UPDATE user SET nom_user = :nom_user, prenom_user = :prenom_user, mail_user = :mail_user, mdp_user = :mdp_user, role_user = :role_user WHERE id_user` = :id_user";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute([
-        ':nom_postulant' => $nom,
-        ':prenom_postulant' => $prenom,
-        ':telephone_postulant' => $phone,
-        ':mail_postulant' => $mail,
-        ':mdp_postulant' => $password,
-        ':role_utilisateur' => $role,
-        ':id_postulant' => $id
+        ':nom_user' => $nom,
+        ':prenom_user' => $prenom,
+        ':telephone_user' => $phone,
+        ':mail_user' => $mail,
+        ':mdp_user' => $password,
+        ':role_user' => $role,
+        ':id_user' => $id
       ]);
 
       return true;
@@ -59,11 +59,29 @@
 
     // Delete User From Database
     public function delete($id) {
-      $sql = "DELETE FROM postulant WHERE id_postulant = :id_postulant";
+      $sql = "DELETE FROM user WHERE id_user = :id_user";
       $stmt = $this->conn->prepare($sql);
-      $stmt->execute(['id_postulant' => $id]);
+      $stmt->execute(['id_user' => $id]);
       return true;
     }
+
+
+    public function readCandidature() {
+      $sql = "SELECT * FROM candidature";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute();
+      $result = $stmt->fetchAll();
+      return $result;
+    }
+
+    public function deleteCandidature($id) {
+      $sql = "DELETE FROM candidature WHERE id_candidature = :id_candidature";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute(['id_candidature' => $id]);
+      return true;
+    }
+    
+
   }
 
 ?>

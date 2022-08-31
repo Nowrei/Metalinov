@@ -9,8 +9,8 @@ Autoloader::register();
 
 
   // Handle Fetch All Users Ajax Request
-  if (isset($_GET['read'])) {
-    $users = $db->candidature();
+  if (isset($_GET['readCandidature'])) {
+    $users = $db->readCandidature();
     $output = '';
     if ($users) {
       foreach ($users as $row)  {
@@ -19,7 +19,6 @@ Autoloader::register();
                       <td>' . $row['adresse_candidature'] . '</td>
                       <td>' . $row['cp_candidature'] . '</td>
                       <td>' . $row['ville_candidature'] . '</td>
-                      <td>' . $row['poste_candidature'] . '</td>
                       <td>' . $row['message_candidature'] . '</td>
                       <td><a href="../assets/upload'  . $row['cv_candidature'] .  '"><img src="../upload/'  . $row['cv_candidature'] .  '" class="img-responsive"></a></td>
                       <td>

@@ -30,16 +30,15 @@ Autoloader::register();
     if ($users) {
       foreach ($users as $row) {
         $output .= '<tr>
-                      <td>' . $row['nom_postulant'] . '</td>
-                      <td>' . $row['prenom_postulant'] . '</td>
-                      <td>' . $row['telephone_postulant'] . '</td>
-                      <td>' . $row['mail_postulant'] . '</td>
-                      <td>' . $row['mdp_postulant'] . '</td>
-                      <td>' . $row['role_utilisateur'] . '</td>
+                      <td>' . $row['nom_user'] . '</td>
+                      <td>' . $row['prenom_user'] . '</td>
+                      <td>' . $row['telephone_user'] . '</td>
+                      <td>' . $row['mail_user'] . '</td>
+                      <td>' . $row['role_user'] . '</td>
                       <td>
-                        <a href="#" id="' . $row['id_postulant'] . '" class="btn btn-success btn-sm rounded-pill py-0 editLink" data-toggle="modal" data-target="#editUserModal">Edit</a>
+                        <a href="#" id="' . $row['id_user'] . '" class="btn btn-success btn-sm rounded-pill py-0 editLink" data-toggle="modal" data-target="#editUserModal">Edit</a>
 
-                        <a href="#" id="' . $row['id_postulant'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink">Delete</a>
+                        <a href="#" id="' . $row['id_user'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink">Delete</a>
                       </td>
                     </tr>';
       }
@@ -57,7 +56,9 @@ Autoloader::register();
     $id = $_GET['id'];
 
     $user = $db->readOne($id);
-    echo json_encode($users);
+    echo json_encode($user);
+    var_dump($user);
+    die;
   }
 
   // Handle Update User Ajax Request
@@ -68,6 +69,7 @@ Autoloader::register();
     $phone = $util->testInput($_POST['phone']);
     $mail = $util->testInput($_POST['mail']);
     $password = $util->testInput($_POST['mdp']);
+    $role = $util->testInput($_POST['role']);
    
 
 

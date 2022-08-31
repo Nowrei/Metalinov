@@ -74,7 +74,6 @@
                 <th>Adresse</th>
                 <th>Code postal</th>
                 <th>Ville</th>
-                <th>Pays</th>
                 <th>Objet</th>
                 <th>Message</th>
                 <th>Action</th>

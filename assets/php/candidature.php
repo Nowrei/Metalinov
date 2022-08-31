@@ -1,8 +1,7 @@
 <?php
 session_start();
-include "config.php";
-include '../class/util.php';
-include '../class/insert.php';
+require '../class/Autoloader.php';
+Autoloader::register();
 
 $util = new Util;
 $db = new Database;
@@ -10,9 +9,8 @@ $db = new Database;
 $adresse = $util->testInput($_POST['adresse']);
 $cp = $util->testInput($_POST['cp']);
 $ville = $util->testInput($_POST['ville']);
-$poste = $util->testInput($_POST['poste']);
 $message = $util->testInput($_POST['message']);
-$id = $util->testInput(htmlspecialchars($_SESSION['id_postulant']));
+$id = $util->testInput(htmlspecialchars($_SESSION['id_user']));
 
 // Chemin de l'Upload d'image
 $targetDir = "../upload/";
@@ -31,7 +29,7 @@ if(!empty($_FILES["file"]["name"])){
             
             
                             // Insert l'image et les données du formulaire en bdd
-                      if($db->candidature($adresse, $cp, $ville, $poste, $message, $fileName, $id)); {          
+                      if($db->candidature($adresse, $cp, $ville, $message, $fileName, $id)); {          
                 echo $util->showMessage('success', 'Votre candidature est bien envoyée');}
             } 
         }else{
