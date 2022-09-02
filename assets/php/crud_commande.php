@@ -38,21 +38,6 @@ Autoloader::register();
     }
   }
  
-    // Handle Update User Ajax Request
-    if (isset($_POST['update'])) {
-      $id = $util->testInput($_POST['id']);
-      $pseudo = $util->testInput($_POST['pseudo']);
-      $mail = $util->testInput($_POST['mail']);
-      $password = $util->testInput($_POST['mdp']);
-      $role = $util->testInput($_POST['role']);
-  
-  
-      if ($db->update($id, $pseudo, $mail, $password, $role)) {
-        echo $util->showMessage('success', 'User updated successfully!');
-      } else {
-        echo $util->showMessage('danger', 'Something went wrong!');
-      }
-    }
   
     // Handle Delete User Ajax Request
     if (isset($_GET['delete'])) {

@@ -61,7 +61,7 @@ const editUser = async (id) => {
   document.getElementById("id").value = response.id;
   document.getElementById("nom").value = response.nom;
   document.getElementById("prenom").value = response.prenom;
-  document.getElementById("telephone").value = response.telephone;
+  document.getElementById("phone").value = response.phone;
   document.getElementById("mail").value = response.mail;
   document.getElementById("mdp").value = response.mdp;
   document.getElementById("role").value = response.role;

@@ -94,7 +94,7 @@ $("#adresse").keyup(function(event) {
     }, 'json');
   }, 150);
 });
-console.log($.get)
+
 
 // On cache la liste si le champ adresse perd le focus
 $("#adresse").focusout(function() {

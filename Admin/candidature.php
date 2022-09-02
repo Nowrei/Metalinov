@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse" id="navbar-content">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-light" href="candidature.php">Commande</a>
+                <a class="nav-link text-light" href="commande.php">Commande</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">Candidature</a>
@@ -74,7 +74,6 @@
                 <th>Adresse</th>
                 <th>Code postal</th>
                 <th>Ville</th>
-                <th>Objet</th>
                 <th>Message</th>
                 <th>Action</th>
               </tr>

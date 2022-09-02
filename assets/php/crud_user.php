@@ -29,7 +29,8 @@ Autoloader::register();
     $output = '';
     if ($users) {
       foreach ($users as $row) {
-        $output .= '<tr>
+        $output .= '<tr
+                      <td>' . $row['id_user'] . '</td>
                       <td>' . $row['nom_user'] . '</td>
                       <td>' . $row['prenom_user'] . '</td>
                       <td>' . $row['telephone_user'] . '</td>
@@ -53,12 +54,11 @@ Autoloader::register();
 
   // Handle Edit User Ajax Request
   if (isset($_GET['edit'])) {
-    $id = $_GET['id'];
+    $id = $_GET['id_user'];
 
     $user = $db->readOne($id);
     echo json_encode($user);
-    var_dump($user);
-    die;
+    
   }
 
   // Handle Update User Ajax Request
