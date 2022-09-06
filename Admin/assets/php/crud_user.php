@@ -29,7 +29,7 @@ Autoloader::register();
     $output = '';
     if ($users) {
       foreach ($users as $row) {
-        $output .= '<tr
+        $output .= '<tr>
                       <td>' . $row['id_user'] . '</td>
                       <td>' . $row['nom_user'] . '</td>
                       <td>' . $row['prenom_user'] . '</td>
@@ -54,7 +54,7 @@ Autoloader::register();
 
   // Handle Edit User Ajax Request
   if (isset($_GET['edit'])) {
-    $id = $_GET['id_user'];
+    $id = $_GET['id'];
 
     $user = $db->readOne($id);
     echo json_encode($user);
@@ -68,11 +68,11 @@ Autoloader::register();
     $prenom = $util->testInput($_POST['prenom']);
     $phone = $util->testInput($_POST['phone']);
     $mail = $util->testInput($_POST['mail']);
-    $password = $util->testInput($_POST['mdp']);
+    $password = $util->testInput($_POST['password']);
     $role = $util->testInput($_POST['role']);
    
 
-
+    $password = password_hash( $password, PASSWORD_DEFAULT); 
     if ($db->update($id, $nom, $prenom, $phone, $mail, $password, $role)) {
       echo $util->showMessage('success', 'User updated successfully!');
     } else {

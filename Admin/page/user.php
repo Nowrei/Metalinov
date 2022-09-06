@@ -98,7 +98,7 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Edit This User</h5>
+          <h5 class="modal-title">Editer un utilisateur</h5>
           <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -106,35 +106,42 @@
             <input type="hidden" name="id" id="id">
             <div class="row mb-3 gx-3">
               <div class="col">
-                <input type="text" name="nom" id="npm" class="form-control form-control-lg" placeholder="Enter First Name" required>
-                <div class="invalid-feedback">First name is required!</div>
+                <input type="text" name="nom" id="npm" class="form-control form-control-lg" placeholder="Entrer un nom" required>
+                <div class="invalid-feedback">Un nom est requis !</div>
               </div>
 
               <div class="col">
-                <input type="text" name="prenom" id="prenom" class="form-control form-control-lg" placeholder="Enter Last Name" required>
-                <div class="invalid-feedback">Last name is required!</div>
+                <input type="text" name="prenom" id="prenom" class="form-control form-control-lg" placeholder="Entrer un prenom" required>
+                <div class="invalid-feedback">Un prenom est requis !</div>
               </div>
             </div>
 
             <div class="mb-3">
-              <input type="email" name="mail" id="mail" class="form-control form-control-lg" placeholder="Enter E-mail" required>
-              <div class="invalid-feedback">E-mail is required!</div>
+              <input type="email" name="mail" id="mail" class="form-control form-control-lg" placeholder="Entrer un mail" required>
+              <div class="invalid-feedback">Un mail est requis !</div>
             </div>
 
             <div class="mb-3">
-              <input type="tel" name="phone" id="phone" class="form-control form-control-lg" placeholder="Enter Phone" required>
-              <div class="invalid-feedback">Phone is required!</div>
+              <input type="tel" name="phone" id="phone" class="form-control form-control-lg" placeholder="Entrer un numéro de téléphone" required>
+              <div class="invalid-feedback">Un numéro de téléphone est requis !</div>
             </div>
 
-            <select class="form-select" aria-label="Default select example" name="role">
-              <option selected>Open this select menu</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
+            <div class="mb-3">
+              <input type="password" name="password" id="password" class="form-control form-control-lg" placeholder="Entrer un numéro de téléphone" required>
+              <div class="invalid-feedback">Un numéro de téléphone est requis !</div>
+            </div>
+            
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example" name="role">
+                <option selected>Role Utilisateur</option>
+                <option value="1">Entreprise</option>
+                <option value="2">Candidat</option>
 
-            </select>
+              </select>
+            </div>
 
             <div class="mb-3">
-              <input type="submit" value="Update User" class="btn btn-success btn-block btn-lg" id="edit-user-btn">
+              <input type="submit" value="Editer un utilisateur" class="btn btn-success btn-block btn-lg" id="edit-user-btn">
             </div>
           </form>
         </div>
@@ -165,6 +172,7 @@
           <table class="table table-striped table-bordered text-center">
             <thead>
               <tr>
+                <th>Id</th>
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Telephone</th>
