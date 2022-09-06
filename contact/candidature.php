@@ -56,6 +56,15 @@
               <div class="invalid-feedback">Veuillez inscrire le poste souhaité</div>
             </div>
 
+            <div class="mb-3 w-50 p-3 mx-auto my-auto">
+                  <select class="form-select" aria-label="Default select example" name="pays">
+                    <option selected>-Choisisez un poste-</option>
+                    <option value="France">Peintre</option>
+                    <option value="Belgique">Soudeur</option>
+
+                  </select>
+                </div>
+
             <div class="mb-3 ">
               <textarea type="text" class="form-control form-control-lg" placeholder="Message" name="message" style="height : 100px" required></textarea>
               <div class="invalid-feedback">Un message est requis!</div>

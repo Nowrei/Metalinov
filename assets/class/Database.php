@@ -5,7 +5,7 @@
 
 
     public function insert($nom, $prenom, $role, $tel, $mail, $password) {
-      //Insertion user
+      //Insertion des données utilisateurs en BDD
     
     
       $sql = "INSERT INTO user (nom_user, prenom_user, telephone_user, mail_user, mdp_user, role_user) 
@@ -25,7 +25,7 @@
       
     
       }
-    // Insertion entreprise entreprise
+    // Insertion de la commande en BDD
     public function entreprise($entreprise, $adresse, $cp, $ville, $pays, $objet, $message, $id) {
      
         $sql = "INSERT INTO entreprise (nom_entreprise, adresse_entreprise, cp_entreprise, ville_entreprise, pays_entreprise, objet_entreprise, message_entreprise, id_user) 
@@ -47,7 +47,7 @@
       }
 
   public function candidature($adresse, $cp, $ville, $message, $fileName, $id) {
-    //Insertion candidature
+    //Insertion des candidatures en BDD
 
 
     $sql = "INSERT INTO candidature (adresse_candidature, cp_candidature, ville_candidature, message_candidature, cv_candidature, id_user) 

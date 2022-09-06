@@ -1,9 +1,15 @@
 body {
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(237, 237, 237) !important;
 }
 
+.couleur {
+
+    background-color: rgb(237, 237, 237);
+  
+}
 .photo {
 
     background: url('../img/front2.jpg');

@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inscription</title>
+  <link rel="stylesheet" href="../assets/styles/connection.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -69,12 +70,13 @@
               </div>
 
               <div class="mb-3">
-                  <select class="form-select" aria-label="Default select example" name="role">
-                    <option selected>Etes vous une entreprise ou un postulant ?</option>
-                    <option value="1">Entreprise</option>
-                    <option value="2">Postulant</option>
-                  </select>
-                </div>
+                <select class="form-select" aria-label="Default select example" name="role">
+                  <option selected>Etes vous une entreprise ou un postulant ?</option>
+                  <option value="1">Entreprise</option>
+                  <option value="2">Postulant</option>
+                </select>
+              </div>
+              <div class="mb-3">
                 <input type="text" name="phone" class="form-control form-control-lg" placeholder="Entrer un numéro de téléphone" required>
                 <div class="invalid-feedback">Un numéro de téléphone est requis!</div>
               </div>

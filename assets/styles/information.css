@@ -2,8 +2,14 @@ body {
 
     margin: 0;
     padding: 0;
-}
+    background-color: rgb(237, 237, 237) !important;
+  }
+  
+.couleur {
 
+    background-color: rgb(237, 237, 237);
+  
+}
 .information {
 
     margin-top: 30px;
