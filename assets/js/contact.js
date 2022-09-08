@@ -5,7 +5,7 @@ const tbody = document.querySelector("tbody");
 const connectionForm = document.getElementById("connection-form");
 
 
-// Add New User Ajax Request
+// Récupération des données du formulaire puis envoie des données au serveur
 addForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 

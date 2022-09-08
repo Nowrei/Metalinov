@@ -2,7 +2,7 @@
     <nav class="navbar navbar-dark bg-secondary text-light">
       <div class="container justify-content-between">
         <div class="d-none d-lg-block">
-          <a href="../index.php"><img src="../assets/img/logo-removebg-preview.png" alt=""  height="30"></a>
+          <a href="../index.php"><img src="../assets/img/image-site/logo-removebg-preview.png" alt=""  height="30"></a>
         </div>
         <div class="navbar navbar-expand-lg">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
@@ -30,9 +30,15 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
           <?php 
+            if ($_SESSION['role_user'] == '0' ) {
+              ?>
+            <li><a class="dropdown-item" href="../admin/page/user.php" >Panel administrateur</a></li>
+            <li><a class="dropdown-item" href="../assets/php/deconnection.php" >Se déconnecter</a></li>
+            <?php } ?>
+          <?php 
             if ($_SESSION['role_user'] == '1' ) {
               ?>
-              <li><a class="dropdown-item" href="contact.php" >Contact</a></li>
+            <li><a class="dropdown-item" href="contact.php" >Contact</a></li>
             <li><a class="dropdown-item" href="../assets/php/deconnection.php" >Se déconnecter</a></li>
             <?php } ?>
         

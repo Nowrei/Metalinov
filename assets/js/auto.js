@@ -25,7 +25,8 @@ function setActive() {
   $('div.address-feedback a:nth-child(' + currentFocus + ')').addClass("active");
 }
 
-// Au clic sur une adresse suggérée, on ventile l'adresse dans les champs appropriés. On espionne mousedown plutôt que click pour l'attraper avant la perte de focus du champ adresse.
+// Au clic sur une adresse suggérée, on ventile l'adresse dans les champs appropriés. 
+//On espionne mousedown plutôt que click pour l'attraper avant la perte de focus du champ adresse.
 $('div.address-feedback').on("mousedown", "a", function(event) {
   // Stop la propagation par défaut
   event.preventDefault();
@@ -88,7 +89,8 @@ $("#adresse").keyup(function(event) {
         // données phase 1 (obj.properties.label) & phase 2 : name, postcode, city
         // J'ajoute chaque élément dans une liste
         let cooladdress = obj.properties.name + " " + obj.properties.postcode + " <strong>" + obj.properties.city + "</strong>" ;
-        liste += '<a class="list-group-item list-group-item-action py-1" href="#" name="' + obj.properties.label + '" data-name="' + obj.properties.name + '" data-postcode="' + obj.properties.postcode + '" data-city="' + obj.properties.city  +'">' + cooladdress + '</a>';
+        liste += '<a class="list-group-item list-group-item-action py-1" href="#" name="' + obj.properties.label + '" data-name="' + obj.properties.name + '" data-postcode="' 
+        + obj.properties.postcode + '" data-city="' + obj.properties.city  +'">' + cooladdress + '</a>';
       });
       $('.address-feedback').html(liste);
     }, 'json');

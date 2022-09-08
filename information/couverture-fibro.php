@@ -24,14 +24,14 @@
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Monopente + Auvent</h4>
                 </div>
-                <a href="couv-fibro/monopente+auvent.php"><img src="../assets/img/cat-monopente-auvent.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-fibro/monopente+auvent.php"><img src="../assets/img/image-site/cat-monopente-auvent.gif" class="img-fluid" alt="Responsive image"></src>
                 </a>
             </div>
             <div class="card text-white mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Monopente</h5>
                 </div>
-                <a href="couv-fibro/monopente.php"><img src="../assets/img/cat-monopente.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-fibro/monopente.php"><img src="../assets/img/image-site/cat-monopente.gif" class="img-fluid" alt="Responsive image"></src>
                 </a>
                 
             </div>
@@ -44,14 +44,14 @@
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Bipente</h4>
                 </div>
-                <a href="couv-fibro/bipente.php"><img src="../assets/img/cat-bipente.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-fibro/bipente.php"><img src="../assets/img/image-site/cat-bipente.gif" class="img-fluid" alt="Responsive image"></src>
                 </a>
             </div>
             <div class="card text-white mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Auvent</h5>
                 </div>
-                <a href="couv-fibro/auvent.php"><img src="../assets/img/cat-auvent.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-fibro/auvent.php"><img src="../assets/img/image-site/cat-auvent.gif" class="img-fluid" alt="Responsive image"></src>
                 </a>
                 
             </div>
@@ -64,7 +64,7 @@
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Appentis</h4>
                 </div>
-                <a href="couv-fibro/appentis.php"><img src="../assets/img/cat-appentis.gif" class="img-fluid" alt="Responsive image"    ></src>
+                <a href="couv-fibro/appentis.php"><img src="../assets/img/image-site/cat-appentis.gif" class="img-fluid" alt="Responsive image"    ></src>
                 </a>
             </div>
             

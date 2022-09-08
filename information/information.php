@@ -63,7 +63,7 @@
         <div class="tab-pane fade active show" id="nav-acier" role="tabpanel" aria-labelledby="nav-acier-tab">
           <div class="d-flex flex-wrap-reverse">
             <div class="col-lg-4 col-md-8 mb-8">
-              <img src="../assets/img/couverture-bac-acier.jpg" class="img-fluid" alt="Responsive image">
+              <img src="../assets/img/image-site/couverture-bac-acier.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col align-self-center">
               <div class="mx-auto  w-75">
@@ -88,7 +88,7 @@
         <div class="tab-pane fade" id="nav-fibro" role="tabpanel" aria-labelledby="nav-fibro-tab">
           <div class="d-flex flex-wrap-reverse">
             <div class="col-lg-4 col-md-8 mb-8">
-              <img src="../assets/img/couverture-fibrociment.jpg" class="img-fluid" alt="Responsive image">
+              <img src="../assets/img/image-site/couverture-fibrociment.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col align-self-center">
               <div class="mx-auto  w-75">
@@ -113,7 +113,7 @@
         <div class="tab-pane fade" id="nav-appli" role="tabpanel" aria-labelledby="nav-appli-tab">
           <div class="d-flex flex-wrap-reverse">
             <div class="col-lg-4 col-md-8 mb-8">
-              <img src="../assets/img/champs-application.jpg" class="img-fluid" alt="Responsive image">
+              <img src="../assets/img/image-site/champs-application.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col align-self-center">
               <div class="mx-auto  w-75">
@@ -133,7 +133,7 @@
         <div class="tab-pane fade" id="nav-charpente" role="tabpanel" aria-labelledby="nav-charpente-tab">
           <div class="d-flex flex-wrap-reverse">
             <div class="col-lg-4 col-md-8 mb-8">
-              <img src="../assets/img/charpente-metallique.jpg" class="img-fluid" alt="Responsive image">
+              <img src="../assets/img/image-site/charpente-metallique.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col align-self-center">
               <div class="mx-auto  w-75">
@@ -152,7 +152,7 @@
         <div class="tab-pane fade" id="nav-serie" role="tabpanel" aria-labelledby="nav-serie-tab">
           <div class="d-flex flex-wrap-reverse">
             <div class="col-lg-4 col-md-8 mb-8">
-              <img src="../assets/img/series-standards.jpg" class="img-fluid" alt="Responsive image">
+              <img src="../assets/img/image-site/series-standards.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col align-self-center">
               <div class="mx-auto  w-75">
@@ -176,7 +176,7 @@
         <div class="tab-pane fade" id="nav-contreventements" role="tabpanel" aria-labelledby="nav-contreventements-tab">
           <div class="d-flex flex-wrap-reverse">
             <div class="col-lg-4 col-md-8 mb-8">
-              <img src="../assets/img/contreventements.jpg" class="img-fluid" alt="Responsive image">
+              <img src="../assets/img/image-site/contreventements.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col align-self-center">
               <div class="mx-auto  w-75">
@@ -194,7 +194,7 @@
         <div class="tab-pane fade" id="nav-ancrage" role="tabpanel" aria-labelledby="nav-ancrage-tab">
           <div class="d-flex flex-wrap-reverse">
             <div class="col-lg-4 col-md-8 mb-8">
-              <img src="../assets/img/ancrages-au-sol.jpg" class="img-fluid" alt="Responsive image">
+              <img src="../assets/img/image-site/ancrages-au-sol.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col align-self-center">
               <div class="mx-auto  w-75">
@@ -211,7 +211,7 @@
         <div class="tab-pane fade" id="nav-boulonnerie" role="tabpanel" aria-labelledby="nav-boulonnerie-tab">
           <div class="d-flex flex-wrap-reverse">
             <div class="col-lg-4 col-md-8 mb-8">
-              <img src="../assets/img/boulonnerie.jpg" class="img-fluid" alt="Responsive image">
+              <img src="../assets/img/image-site/boulonnerie.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col align-self-center">
               <div class="mx-auto  w-75">

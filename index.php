@@ -31,7 +31,7 @@ if(isset($_SESSION['role_user'])) {
 
 <div class="photo">
   <div class="image">
-    <img src="assets/img/logo-removebg-preview.png" class="center" >
+    <img src="assets/img/image-site/logo-removebg-preview.png" class="center" >
   </div>
   <h1>MÉTALINOV CONÇOIT, FABRIQUE, ET POSE VOTRE CHARPENTE MÉTALLIQUE PARTOUT EN FRANCE</h1>
 </div>
@@ -41,7 +41,7 @@ if(isset($_SESSION['role_user'])) {
       <div class="row justify-content-end">
         <div class="d-flex flex-wrap-reverse">
           <div class="col-lg-4 col-md-4 mb-4 mb-md-0 ms-2 align-self-center">
-            <img src="assets/img/DSC_0074.jfif" class="img-fluid" alt="Responsive image">
+            <img src="assets/img/image-site/DSC_0074.jfif" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col align-self-center">
             <div class="mx-auto  w-75">
@@ -55,28 +55,28 @@ if(isset($_SESSION['role_user'])) {
 
 <div class="slider">
         <div class="img-div div1">
-          <img src="assets/img/1.jpg" class="slide" height=100% width=100%>
+          <img src="assets/img/image-site/1.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div2">
-        <img src="assets/img/front3.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/image-site/front3.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div3">
-        <img src="assets/img/front4.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/image-site/front4.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div4">
-        <img src="assets/img/4.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/image-site/4.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div5">
-        <img src="assets/img/5.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/image-site/5.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div6">
-        <img src="assets/img/6.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/image-site/6.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div7">
-        <img src="assets/img/7.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/image-site/7.jpg" class="slide" height=100% width=100%>
         </div>
         <div class="img-div div8">
-        <img src="assets/img/8.jpg" class="slide" height=100% width=100%>
+        <img src="assets/img/image-site/8.jpg" class="slide" height=100% width=100%>
         </div>
 </div>
 
@@ -95,7 +95,7 @@ if(isset($_SESSION['role_user'])) {
       <div class="accordion-body">
       <div class="d-flex flex-wrap-reverse">
           <div class="col-lg-4 col-md-8 mb-8">
-            <img src="assets/img/bureau-d-etudes.jpg" class="img-fluid" alt="Responsive image">
+            <img src="assets/img/image-site/bureau-d-etudes.jpg" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col align-self-center">
             <div class="mx-auto  w-75">
@@ -120,7 +120,7 @@ if(isset($_SESSION['role_user'])) {
       <div class="accordion-body">
       <div class="d-flex flex-wrap-reverse">
           <div class="col-lg-4 col-md-8 mb-8">
-            <img src="assets/img/atelier-de-production.jpg" class="img-fluid" alt="Responsive image">
+            <img src="assets/img/image-site/atelier-de-production.jpg" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col align-self-center">
             <div class="mx-auto  w-75">
@@ -145,7 +145,7 @@ if(isset($_SESSION['role_user'])) {
       <div class="accordion-body">
        <div class="d-flex flex-wrap-reverse">
           <div class="col-lg-4 col-md-8 mb-8">
-            <img src="assets/img/front.jpg" class="img-fluid" alt="Responsive image">
+            <img src="assets/img/image-site/front.jpg" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col align-self-center">
             <div class="mx-auto  w-75">
@@ -170,14 +170,14 @@ if(isset($_SESSION['role_user'])) {
       <div class="accordion-body">
       <div class="d-flex flex-wrap-reverse">
           <div class="col-lg-4 col-md-8 mb-8">
-            <img src="assets/img/maitrise-de-la-qualite.jpg" class="img-fluid" alt="Responsive image">
+            <img src=assets/img/image-site/maitrise-de-la-qualite.jpg" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col align-self-center">
             <div class="mx-auto  w-75">
 
               <h2 class="text-center">La maîtrise de la qualité</h2><br>
               <p class="lh-base">Depuis près de 20 ans, des milliers de bâtiments vendus. Notre bureau d’études est parfaitement adapté aux problèmes les plus spécifiques. Un outil informatique de pointe, des ingénieurs, des dessinateurs à votre écoute, pour étudier, concevoir et coordonner la réalisation de votre projet. Des contrôles continus et rigoureux tout au long du cycle de la réalisation vous assurent un produit fini de qualité et sans défaut.
-                <img src="assets/img/qualibat.jpg" class="rounded mx-auto d-block" alt="Responsive">
+                <img src="assets/img/image-site/qualibat.jpg" class="rounded mx-auto d-block" alt="Responsive">
               </p>
             </div>
           </div>
