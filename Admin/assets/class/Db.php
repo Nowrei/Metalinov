@@ -32,9 +32,9 @@
 
     // Fetch Single User From Database
     public function readOne($id) {
-      $sql = "SELECT * FROM user WHERE id_user = :id_user";
+      $sql = "SELECT * FROM user WHERE id_user = :id";
       $stmt = $this->conn->prepare($sql);
-      $stmt->execute(['id_user' => $id]);
+      $stmt->execute(['id' => $id]);
       $result = $stmt->fetch();
       return $result;
     }
@@ -42,8 +42,8 @@
     // Update Single User
     public function update($id, $nom, $prenom, $phone, $mail, $password, $role) {
       
-      $sql = "UPDATE user SET nom_user = nom_user, prenom_user = :prenom_user, telephone_user = :telephone_user, mail_user = :mail_user, mdp_user = :mdp_user, role_user = :role_user 
-      WHERE id_user = :id_user";
+      $sql = "UPDATE user SET nom_user = :nom_user, prenom_user = :prenom_user, telephone_user = :telephone_user, mail_user = :mail_user, mdp_user = :mdp_user, role_user = :role_user 
+      WHERE user.id_user = :id_user";
       $stmt = $this->conn->prepare($sql);
       $stmt->execute([
         ':nom_user' => $nom,

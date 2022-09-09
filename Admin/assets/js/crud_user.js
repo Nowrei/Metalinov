@@ -54,19 +54,19 @@ tbody.addEventListener("click", (e) => {
 });
 
 const editUser = async (id) => {
-  const data = await fetch(`../assets/php/crud_user.php?edit=1&id=${id}`, {
+  const data = await fetch(`../assets/php/crud_user.php?edit=1&id_user=${id}`, {
     method: "GET",
   });
   const response = await data.json();
-  document.getElementById("id").value = response.id;
-  document.getElementById("nom").value = response.nom;
-  document.getElementById("prenom").value = response.prenom;
-  document.getElementById("phone").value = response.phone;
-  document.getElementById("mail").value = response.mail;
-  document.getElementById("mdp").value = response.mdp;
-  document.getElementById("role").value = response.role;
-};
+  document.getElementById("id").value = response.id_user;
+  document.getElementById("nom").value = response.nom_user;
+  document.getElementById("prenom").value = response.prenom_user;
+  document.getElementById("phone").value = response.telephone_user;
+  document.getElementById("mail").value = response.mail_user;
+  document.getElementById("password").value = response.mdp_user;
+  document.getElementById("role").value = response.role_user;
 
+};
 
 // Update User Ajax Request
 updateForm.addEventListener("submit", async (e) => {

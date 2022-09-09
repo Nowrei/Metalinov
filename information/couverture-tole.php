@@ -24,14 +24,14 @@
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Monopente + Auvent</h4>
                 </div>
-                <a href="couv-tole/monopente+auvent.php"><img src="../assets/img/cat-monopente-auvent.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-tole/monopente+auvent.php"><img src="../assets/img/image-site/cat-monopente-auvent.gif" class="img-fluid" alt="Monopente + Auvent"></src>
                 </a>
             </div>
             <div class="card text-white mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Monopente</h5>
                 </div>
-                <a href="couv-tole/monopente.php"><img src=".../assets/img/image-site/cat-monopente.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-tole/monopente.php"><img src="../assets/img/image-site/cat-monopente.gif" class="img-fluid" alt="Monopente"></src>
                 </a>
                 
             </div>
@@ -44,14 +44,14 @@
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Bipente</h4>
                 </div>
-                <a href="couv-tole/bipente.php"><img src="../assets/img/image-site/cat-bipente.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-tole/bipente.php"><img src="../assets/img/image-site/cat-bipente.gif" class="img-fluid" alt="Bipente"></src>
                 </a>
             </div>
             <div class="card text-white mt-5 mb-3 mx-auto col-10 col-md-0 c-l border-0" style="max-width: 20rem;">
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Auvent</h5>
                 </div>
-                <a href="couv-tole/auvent.php"><img src="../assets/img/image-site//cat-auvent.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-tole/auvent.php"><img src="../assets/img/image-site//cat-auvent.gif" class="img-fluid" alt="Auvent"></src>
                 </a>
                 
             </div>
@@ -64,7 +64,7 @@
                 <div class="card-body" style="text-align: center;">
                     <h4 class="card-title mt-2 text-center text-secondary">Appentis</h4>
                 </div>
-                <a href="couv-tole/appentis.php"><img src="../assets/img/image-site/cat-appentis.gif" class="img-fluid" alt="Responsive image"></src>
+                <a href="couv-tole/appentis.php"><img src="../assets/img/image-site/cat-appentis.gif" class="img-fluid" alt="Appentis"></src>
                 </a>
             </div>
             

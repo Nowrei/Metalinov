@@ -106,7 +106,7 @@
             <input type="hidden" name="id" id="id">
             <div class="row mb-3 gx-3">
               <div class="col">
-                <input type="text" name="nom" id="npm" class="form-control form-control-lg" placeholder="Entrer un nom" required>
+                <input type="text" name="nom" id="nom" class="form-control form-control-lg" placeholder="Entrer un nom" required>
                 <div class="invalid-feedback">Un nom est requis !</div>
               </div>
 
@@ -127,17 +127,14 @@
             </div>
 
             <div class="mb-3">
-              <input type="password" name="password" id="password" class="form-control form-control-lg" placeholder="Entrer un numéro de téléphone" required>
-              <div class="invalid-feedback">Un numéro de téléphone est requis !</div>
+              <input type="text" name="password" id="password" class="form-control form-control-lg" placeholder="Entrer un email" required>
+              <div class="invalid-feedback">Un mot de passe est requis !</div>
             </div>
             
             <div class="mb-3">
-              <select class="form-select" aria-label="Default select example" name="role">
-                <option selected>Role Utilisateur</option>
-                <option value="1">Entreprise</option>
-                <option value="2">Candidat</option>
-
-              </select>
+            <input type="text" name="role" id="role" class="form-control form-control-lg" placeholder="Entrer un role" required>
+              <div class="invalid-feedback">Un mot de passe est requis !</div>
+            
             </div>
 
             <div class="mb-3">
@@ -172,7 +169,6 @@
           <table class="table table-striped table-bordered text-center">
             <thead>
               <tr>
-                <th>Id</th>
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Telephone</th>
