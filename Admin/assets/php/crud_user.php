@@ -36,9 +36,9 @@ Autoloader::register();
                       <td>' . $row['mail_user'] . '</td>
                       <td>' . $row['role_user'] . '</td>
                       <td>
-                        <a href="#" id="' . $row['id_user'] . '" class="btn btn-success btn-sm rounded-pill py-0 editLink" data-toggle="modal" data-target="#editUserModal">Edit</a>
+                        <a href="#" id="' . $row['id_user'] . '" class="btn btn-success btn-sm rounded-pill py-0 editLink" data-toggle="modal" data-target="#editUserModal">Modifier</a>
 
-                        <a href="#" id="' . $row['id_user'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink">Delete</a>
+                        <a href="#" id="' . $row['id_user'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink">Supprimer</a>
                       </td>
                     </tr>';
       }

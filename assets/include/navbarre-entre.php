@@ -29,6 +29,7 @@
             Contact
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+          <li><a class="dropdown-item" href="../contact/localisation.php" >Nous joindre</a></li>
           <?php 
             if ($_SESSION['role_user'] == '0' ) {
               ?>

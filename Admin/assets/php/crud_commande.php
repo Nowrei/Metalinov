@@ -23,8 +23,8 @@ Autoloader::register();
                       <td>' . $row['objet_commande'] . '</td>
                       <td>' . $row['message_commande'] . '</td>
                       <td>
-                      <a href="voir.php?id="' . $row['id_commande'] . '" class="btn btn-success btn-sm rounded-pill py-0">Edit</a>
-                      <a href="#" id="' . $row['id_commande'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink" data-toggle="modal" data-target="#deleteUserModal">Delete</a>
+                      <a href="voir.php?id="' . $row['id_commande'] . '" class="btn btn-success btn-sm rounded-pill py-0">Modifier</a>
+                      <a href="#" id="' . $row['id_commande'] . '" class="btn btn-danger btn-sm rounded-pill py-0 deleteLink" data-toggle="modal" data-target="#deleteUserModal">Supprimer</a>
            
                     </td>
                 
