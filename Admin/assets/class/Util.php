@@ -1,7 +1,7 @@
 <?php
 
   class Util {
-    // Method of input value sanitization
+    // Method pour sécuriser toute entrer des formmulaire
     public function testInput($data) {
       $data = trim($data);
       $data = stripslashes($data);
@@ -11,7 +11,7 @@
       return $data;
     }
 
-    // Method for displaying Success And Error Message
+    // Method pour afficher les messages de succès et d'alerte
     public function showMessage($type, $message) {
       return '<div class="alert alert-' . $type . ' alert-dismissible fade show" role="alert">
                 <strong>' . $message . '</strong>

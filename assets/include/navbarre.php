@@ -34,7 +34,7 @@
           if ($_SESSION['role_user'] == '0' ) {
               ?>
             <li><a class="dropdown-item" href="admin/page/user.php" >Panel administrateur</a></li>
-            <li><a class="dropdown-item" href="../assets/php/deconnection.php" >Se déconnecter</a></li>
+            <li><a class="dropdown-item" href="assets/php/deconnection.php" >Se déconnecter</a></li>
             <?php } ?>
           <?php 
             if ($_SESSION['role_user'] == '1' ) {

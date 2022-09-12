@@ -10,6 +10,7 @@ if(isset($_SESSION['role_user'])) {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Metalinov, société spécialisée dans létude et la réalisation de bâtiments professionnels à structure métallique.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metalinov</title>
     <link rel="stylesheet" href="assets/styles/index.css">

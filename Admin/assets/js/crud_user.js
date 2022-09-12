@@ -90,7 +90,7 @@ updateForm.addEventListener("submit", async (e) => {
     const response = await data.text();
 
     showAlert.innerHTML = response;
-    document.getElementById("edit-user-btn").value = "Add User";
+    document.getElementById("edit-user-btn").value = "Editer l'utilisateur";
     updateForm.reset();
     updateForm.classList.remove("was-validated");
     editModal.hide();

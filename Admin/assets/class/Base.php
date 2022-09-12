@@ -43,45 +43,15 @@
       
     }
 
-        //Select Email Postulant
-    public function postulant($mail) {
-      $sql = "SELECT * FROM postulant WHERE mail_postulant = :mail_postulant";
-      $requete = $this->conn->prepare($sql);
-      $requete->execute(array(
-          "mail_postulant" => $mail
-        ));
-        $testmail = 0;
-        while($resultat = $requete->fetch()) {
 
-          if ($mail == $resultat['mail_postulant']) {
-
-            $testmail = 1 ;
-        }
+    // Fetch All Users From Database
+    public function read() {
+      $sql = "SELECT * FROM commande";
+      $stmt = $this->conn->prepare($sql);
+      $stmt->execute();
+      $result = $stmt->fetchAll();
+      return $result;
     }
-    return $testmail;
-    
-  }
-
-  public function verif_postulant($mail) {
-    $sql = "SELECT * FROM postulant WHERE mail_postulant = :mail_postulant";
-    $requete = $this->conn->prepare($sql);
-    $requete->execute(array(
-        "mail_postulant" => $mail
-      ));
-      $count = $requete->rowCount();
-
-      return $count;
-  
-}
-
-// Fetch All Users From Database
-public function read() {
-  $sql = "SELECT * FROM commande ";
-  $stmt = $this->conn->prepare($sql);
-  $stmt->execute();
-  $result = $stmt->fetchAll();
-  return $result;
-}
 
 
 // Delete User From Database

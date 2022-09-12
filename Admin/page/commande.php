@@ -88,6 +88,6 @@
       </div>
     </div>
   </div>
-  <script src="../assets/js/crud.js"></script>
+  <script src="../assets/js/crud_commande.js"></script>
 </body>
 </html>

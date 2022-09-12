@@ -26,20 +26,20 @@
     
       }
     // Insertion de la commande en BDD
-    public function entreprise($entreprise, $adresse, $cp, $ville, $pays, $objet, $message, $id) {
+    public function entreprise($commande, $adresse, $cp, $ville, $pays, $objet, $message, $id) {
      
-        $sql = "INSERT INTO entreprise (nom_entreprise, adresse_entreprise, cp_entreprise, ville_entreprise, pays_entreprise, objet_entreprise, message_entreprise, id_user) 
-        VALUES (:nom_entreprise, :adresse_entreprise, :cp_entreprise, :ville_entreprise, :pays_entreprise, :objet_entreprise, :message_entreprise, :id_user)";
+        $sql = "INSERT INTO commande (entreprise_commande, adresse_commande, cp_commande, ville_commande, pays_commande, objet_commande, message_commande, id_user) 
+        VALUES (:nom_commande, :adresse_commande, :cp_commande, :ville_commande, :pays_commande, :objet_commande, :message_commande, :id_user)";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([
 
-          ':nom_entreprise' => $entreprise,
-          ':adresse_entreprise' => $adresse,
-          ':cp_entreprise' => $cp,
-          ':ville_entreprise' => $ville,
-          ':pays_entreprise' => $pays,
-          ':objet_entreprise' => $objet,
-          ':message_entreprise' => $message,
+          ':nom_commande' => $commande,
+          ':adresse_commande' => $adresse,
+          ':cp_commande' => $cp,
+          ':ville_commande' => $ville,
+          ':pays_commande' => $pays,
+          ':objet_commande' => $objet,
+          ':message_commande' => $message,
           ':id_user' => $id
       
         ]);

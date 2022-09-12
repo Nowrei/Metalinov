@@ -73,9 +73,9 @@ Autoloader::register();
 
     $password = password_hash( $password, PASSWORD_DEFAULT); 
     if ($db->update($id, $nom, $prenom, $phone, $mail, $password, $role)) {
-      echo $util->showMessage('success', 'User updated successfully!');
+      echo $util->showMessage('success', 'Utilisateur mise à jour!');
     } else {
-      echo $util->showMessage('danger', 'Something went wrong!');
+      echo $util->showMessage('danger', 'Erreur lors de l' . "'" .'opération!');
     }
   }
 
@@ -83,7 +83,7 @@ Autoloader::register();
   if (isset($_GET['delete'])) {
     $id = $_GET['id'];
     if ($db->delete($id)) {
-      echo $util->showMessage('info', 'User deleted successfully!');
+      echo $util->showMessage('info', 'Utilisateur supprimer avec succès!');
     } else {
       echo $util->showMessage('danger', 'Something went wrong!');
     }
