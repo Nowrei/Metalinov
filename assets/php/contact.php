@@ -7,7 +7,7 @@ Autoloader::register();
   $db = new Database;
   $util = new Util;
 
-  // Handle Add New User Ajax Request
+  // Donnée du formulaire
   if (isset($_POST['add'])) {
 
   $entreprise = $util->testInput(htmlspecialchars($_POST['entreprise']));
@@ -20,7 +20,8 @@ Autoloader::register();
   $id =  htmlspecialchars($_SESSION['id_user']);
     
 
-
+  // Envoie des données en base de donnée
+  
     if ($db->entreprise($entreprise, $adresse, $cp, $ville, $pays, $objet, $message, $id)) {
       echo $util->showMessage('success', 'Commande bien prit en compte, nous vous recontacterons dans les plus bref délais');
     } else {

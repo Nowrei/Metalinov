@@ -77,7 +77,7 @@
                 </select>
               </div>
               <div class="mb-3">
-                <input type="text" name="phone" class="form-control form-control-lg" placeholder="Entrer un numéro de téléphone" required>
+                <input type="text" name="phone" class="form-control form-control-lg" placeholder="Entrer un numéro de téléphone" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}"required>
                 <div class="invalid-feedback">Un numéro de téléphone est requis!</div>
               </div>
 

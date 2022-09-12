@@ -17,9 +17,9 @@ Autoloader::register();
     
 
     if ($db->insert($nom, $prenom, $phone, $mail, $password, $role)) {
-      echo $util->showMessage('success', 'User inserted successfully!');
+      echo $util->showMessage('success', 'Utilisateur inscrit en base de donnée!');
     } else {
-      echo $util->showMessage('danger', 'Something went wrong!');
+      echo $util->showMessage('danger', 'Quelque chose c'. "'" . 'est mal passer!');
     }
   }
 
@@ -45,7 +45,7 @@ Autoloader::register();
       echo $output;
     } else {
       echo '<tr>
-              <td colspan="6">No Users Found in the Database!</td>
+              <td colspan="6">Aucun utisateur en base de donnée!</td>
             </tr>';
     }
   }
@@ -85,8 +85,8 @@ Autoloader::register();
     if ($db->delete($id)) {
       echo $util->showMessage('info', 'Utilisateur supprimer avec succès!');
     } else {
-      echo $util->showMessage('danger', 'Something went wrong!');
+      echo $util->showMessage('danger', 'Quelque chose c'. "'" . 'est mal passer!');
     }
   }
 
-?>
+?>                                    
